@@ -14,8 +14,8 @@
 }
 
 :root {
-  --background-color: #070707;
-  --accent-color: #76362e;
+  --background-color: #1d1918;
+  --accent-color: #322c2b;
 
   --secondary-accent-color: #bfc5c5;
   --text-color: #fffdf7;
@@ -90,6 +90,54 @@ nav.scrolled {
 
 nav > div {
   flex: 1;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-content: center;
+
+  padding: 1rem;
+
+  gap: 2rem;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  cursor: pointer;
+  font-family: Switzer-Semibold;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative; /* Damit das Pseudo-Element relativ zum Ankerpositioniert wird */
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0; /* Startpunkt links */
+  bottom: -2px; /* Startpunkt unten, um die Border zu verstecken */
+  width: 0; /* Anfangsbreite 0 */
+  height: 2px; /* Höhe der Border */
+  background-color: var(--accent-color); /* Farbe der Border */
+  transition: width 0.25s ease-in-out; /* Übergangseigenschaft */
+}
+
+.nav-item a:hover::after {
+  width: 100%; /* Breite 100% für die vollständige Border */
+}
+
+@keyframes drawBorder {
+  0% {
+    width: 0; /* Startbreite 0 */
+  }
+  100% {
+    width: 100%; /* Endbreite 100% */
+  }
 }
 
 .logo {
@@ -206,7 +254,21 @@ nav > div {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1920px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
+  .toggle-btn {
+    display: flex;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
   .logo-main img {
     display: none;
   }
@@ -595,4 +657,3 @@ textarea#message {
   height: 100%;
   object-fit: cover;
 }
-

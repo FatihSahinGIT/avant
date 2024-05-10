@@ -20,6 +20,18 @@
             onclick="this.classList.toggle('active');"
           ></button>
         </div>
+
+        <div class="nav-items">
+          <div class="nav-item">
+            <li><a href="#about">Über uns</a></li>
+          </div>
+          <div class="nav-item">
+            <li><a href="/kitchen.html">Projekte</a></li>
+          </div>
+          <div class="nav-item">
+            <li><a href="/contact.html">Kontakt</a></li>
+          </div>
+        </div>
       </nav>
       <div class="overlay">
         <div class="overlay-menu">
@@ -50,7 +62,9 @@
           Montage, um Ihre perfekte Küche zu verwirklichen.
         </p>
 
-        <button><a href="/avant/contact.html">Kontakt</a></button>
+        <button id="main__btn">
+          <a href="/avant/contact.html">Kontakt</a>
+        </button>
       </div>
 
       <div class="about" id="about">
@@ -511,17 +525,6 @@
       });
 
     // Event-Listener für den Button zum Rückgängigmachen der Gesamtübersicht hinzufügen
-    document
-      .querySelector(".kitchen button")
-      .addEventListener("click", function () {
-        location.reload();
-      });
-
-    document
-      .querySelector("#single-product button")
-      .addEventListener("click", function () {
-        location.reload();
-      });
 
     function showSingleProduct(imageSrc, info) {
       console.log(imageSrc, info);
