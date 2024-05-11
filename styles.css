@@ -15,7 +15,7 @@
 
 :root {
   --background-color: #1d1918;
-  --accent-color: #322c2b;
+  --accent-color: #151515;
 
   --secondary-accent-color: #bfc5c5;
   --text-color: #fffdf7;
@@ -78,17 +78,18 @@ nav {
   align-items: center;
   padding: 0.5em 1em;
 
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   z-index: 1000;
 
   transition: background-color 0.25s ease-in-out;
 }
 
 nav.scrolled {
-  background: var(--background-color);
+  background: var(--accent-color);
+  z-index: 9999;
 }
 
-nav > div {
+nav>div {
   flex: 1;
 }
 
@@ -113,30 +114,41 @@ nav > div {
   font-size: 1rem;
   color: var(--text-color);
   text-decoration: none;
-  position: relative; /* Damit das Pseudo-Element relativ zum Ankerpositioniert wird */
+  position: relative;
+  /* Damit das Pseudo-Element relativ zum Ankerpositioniert wird */
 }
 
 .nav-item a::after {
   content: "";
   position: absolute;
-  left: 0; /* Startpunkt links */
-  bottom: -2px; /* Startpunkt unten, um die Border zu verstecken */
-  width: 0; /* Anfangsbreite 0 */
-  height: 2px; /* Höhe der Border */
-  background-color: var(--accent-color); /* Farbe der Border */
-  transition: width 0.25s ease-in-out; /* Übergangseigenschaft */
+  left: 0;
+  /* Startpunkt links */
+  bottom: -2px;
+  /* Startpunkt unten, um die Border zu verstecken */
+  width: 0;
+  /* Anfangsbreite 0 */
+  height: 2px;
+  /* Höhe der Border */
+  background-color: var(--accent-color);
+  /* Farbe der Border */
+  transition: width 0.25s ease-in-out;
+  /* Übergangseigenschaft */
 }
 
 .nav-item a:hover::after {
-  width: 100%; /* Breite 100% für die vollständige Border */
+  width: 100%;
+  /* Breite 100% für die vollständige Border */
 }
 
 @keyframes drawBorder {
   0% {
-    width: 0; /* Startbreite 0 */
+    width: 0;
+    /* Startbreite 0 */
   }
+
   100% {
-    width: 100%; /* Endbreite 100% */
+    width: 100%;
+    /* Endbreite 100% */
   }
 }
 
@@ -295,6 +307,22 @@ nav > div {
     color: var(--text-color) !important;
     font-size: 0.85rem !important;
   }
+
+  #main__btn {
+    text-align: center;
+    /* Zentrieren Sie den Text horizontal */
+    width: 100%;
+  }
+
+  #main__btn a {
+    position: absolute;
+    display: inline-block;
+    /* Damit die Textausrichtung funktioniert */
+    margin: 0 auto;
+    /* Zentrieren Sie den Button horizontal */
+    bottom: 10%;
+    /* Optional: Ändern Sie die vertikale Position nach Bedarf */
+  }
 }
 
 #main-img {
@@ -318,6 +346,8 @@ nav > div {
   justify-content: center;
   align-items: center;
 
+  gap: 2rem;
+
   padding-top: 80px;
 }
 
@@ -338,7 +368,20 @@ nav > div {
   text-align: center;
   color: var(--secondary-accent-color);
   width: 75%;
-  font-family: Switzer-Thin;
+  font-family: Switzer-Regular;
+}
+
+#main__btn {
+  all: unset;
+}
+
+#main__btn a {
+  font-family: Subfont;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: var(--text-color);
+  color: var(--accent-color);
+  padding: 0.25rem;
 }
 
 #main-img {
@@ -389,6 +432,107 @@ nav > div {
   font-size: 1.35rem;
 }
 
+.service {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.service-header-top {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.service-slider {
+  position: absolute;
+  top: 15vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 100px;
+  perspective-origin: 50% 100%;
+}
+
+.service-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 520px;
+  border-radius: 6px;
+  transform: translate3d(-50%, -50%, 0px);
+  overflow: hidden;
+  background: #000;
+}
+
+.service-card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  object-fit: cover;
+}
+
+.service-header {
+  font-family: Subfont;
+  position: absolute;
+  width: 65%;
+  left: 50%;
+  text-align: center;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+#service-header__text {
+  font-family: Switzer-Regular;
+  font-size: 1rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.service-card h1 {
+  position: relative;
+  text-align: center;
+  font-size: 6vw;
+  line-height: 0;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.service-card h1 span {
+  position: relative;
+  display: inline-block;
+}
+
+#service-card__text {
+  font-family: Switzer-Light;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--secondary-accent-color);
+  font-size: 0.75rem;
+}
+
 .projects {
   width: 100vw;
   height: 100vh;
@@ -419,9 +563,35 @@ nav > div {
   font-size: 4rem;
 }
 
+#projects-btn {
+  all: unset;
+  margin: 0.75rem 0;
+}
+
+#projects-btn a {
+  cursor: pointer;
+  font-size: 1.15rem;
+  background-color: var(--text-color);
+  border-radius: 4px;
+  padding: 0.25rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  list-style: none;
+}
+
 .slider {
   width: 100%;
   cursor: grab;
+}
+
+/* CSS für die deaktivierte Slideshow */
+.slider.disabled {
+  pointer-events: none;
+  /* Klicks und Ereignisse werden nicht akzeptiert */
+  opacity: 0.5;
+  /* Reduziert die Deckkraft, um zu zeigen, dass das Element deaktiviert ist */
+  /* Andere Stile, um das deaktivierte Aussehen anzupassen */
+  /* z.B. Hintergrundfarbe ändern, Cursor ändern, Filter anwenden, etc. */
 }
 
 .slider-wrapper {
@@ -584,6 +754,7 @@ textarea#message {
 }
 
 @media (min-width: 900px) {
+
   html,
   body {
     height: 100%;
@@ -605,10 +776,13 @@ textarea#message {
   padding-top: 80px;
   width: 100vw;
 
-  display: flex; /* Änderung: Flex-Layout */
-  flex-wrap: wrap; /* Änderung: Umbruch bei Bedarf */
+  display: flex;
+  /* Änderung: Flex-Layout */
+  flex-wrap: wrap;
+  /* Änderung: Umbruch bei Bedarf */
   justify-content: center;
-  align-items: flex-start; /* Änderung: Ausrichtung anpassen */
+  align-items: flex-start;
+  /* Änderung: Ausrichtung anpassen */
 }
 
 .kitchen-content {
@@ -620,24 +794,24 @@ textarea#message {
 }
 
 @media only screen and (max-width: 767px) {
+
   /* Für iPhone */
   .kitchen-content {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(200px, 1fr)
-    ); /* Ändern Sie die Spaltenanzahl für kleinere Bildschirme */
-    gap: 10px; /* Reduzieren Sie den Abstand zwischen den Elementen */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Ändern Sie die Spaltenanzahl für kleinere Bildschirme */
+    gap: 10px;
+    /* Reduzieren Sie den Abstand zwischen den Elementen */
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
   /* Für iPad */
   .kitchen-content {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(250px, 1fr)
-    ); /* Ändern Sie die Spaltenanzahl für iPad */
-    gap: 15px; /* Ändern Sie den Abstand zwischen den Elementen für iPad */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Ändern Sie die Spaltenanzahl für iPad */
+    gap: 15px;
+    /* Ändern Sie den Abstand zwischen den Elementen für iPad */
   }
 }
 
