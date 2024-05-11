@@ -123,13 +123,13 @@ nav>div {
   position: absolute;
   left: 0;
   /* Startpunkt links */
-  bottom: -2px;
+  bottom: -5px;
   /* Startpunkt unten, um die Border zu verstecken */
   width: 0;
   /* Anfangsbreite 0 */
-  height: 2px;
+  height: 5px;
   /* Höhe der Border */
-  background-color: var(--accent-color);
+  background-color: var(--danger-color);
   /* Farbe der Border */
   transition: width 0.25s ease-in-out;
   /* Übergangseigenschaft */
