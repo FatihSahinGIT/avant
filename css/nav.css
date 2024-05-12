@@ -193,7 +193,6 @@ nav h2 a {
 }
 
 /* === MOBILE SCREEN === */
-
 @media (max-width: 900px) {
   .toggle-btn {
     display: flex;
