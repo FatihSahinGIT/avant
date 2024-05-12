@@ -2,6 +2,8 @@
 @import url("./normalize.css");
 @import url("./assets/fonts/switzer/css/switzer.css");
 
+@import url("./css/nav.css");
+
 /* --- FONTS --- */
 @font-face {
   font-family: "Subfont";
@@ -47,243 +49,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: 0;
-}
-
-.hero-img {
-  margin-top: 4em;
-  width: 100%;
-  height: 100%;
-}
-
-#nav-header,
-nav h2 a {
-  font-family: Subfont;
-  height: auto;
-  font-size: 1.25rem;
-  max-width: max-content;
-  text-decoration: none;
-  list-style: none;
-  color: var(--text-color);
-}
-
-#nav-header:visited {
-  color: var(--text-color);
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em 1em;
-
-  /* mix-blend-mode: difference; */
-  z-index: 1000;
-
-  transition: background-color 0.25s ease-in-out;
-}
-
-nav.scrolled {
-  background: var(--accent-color);
-  z-index: 9999;
-}
-
-nav>div {
-  flex: 1;
-}
-
-.nav-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-content: center;
-
-  padding: 1rem;
-
-  gap: 2rem;
-}
-
-.nav-item {
-  list-style: none;
-}
-
-.nav-item a {
-  cursor: pointer;
-  font-family: Switzer-Semibold;
-  font-size: 1rem;
-  color: var(--text-color);
-  text-decoration: none;
-  position: relative;
-  /* Damit das Pseudo-Element relativ zum Ankerpositioniert wird */
-}
-
-.nav-item a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  /* Startpunkt links */
-  bottom: -5px;
-  /* Startpunkt unten, um die Border zu verstecken */
-  width: 0;
-  /* Anfangsbreite 0 */
-  height: 5px;
-  /* Höhe der Border */
-  background-color: var(--danger-color);
-  /* Farbe der Border */
-  transition: width 0.25s ease-in-out;
-  /* Übergangseigenschaft */
-}
-
-.nav-item a:hover::after {
-  width: 100%;
-  /* Breite 100% für die vollständige Border */
-}
-
-@keyframes drawBorder {
-  0% {
-    width: 0;
-    /* Startbreite 0 */
-  }
-
-  100% {
-    width: 100%;
-    /* Endbreite 100% */
-  }
-}
-
-.logo {
-  text-align: center;
-}
-
-.logo p {
-  position: relative;
-  top: 0.225em;
-}
-
-.toggle-btn {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.burger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.75em 2em 1.5em 2em;
-  background: none;
-  border: none;
-  cursor: pointer;
-  gap: 0.5rem;
-  outline: none;
-  /* Hinzugefügt, um den blauen Rand beim Klicken auf das Burger-Menü zu entfernen */
-}
-
-.burger:before,
-.burger:after {
-  content: "";
-  width: 30px;
-  height: 1px;
-  position: absolute;
-  transition: all 250ms ease-out;
-  background-color: var(--text-color);
-  /* Farbe der Burger-Menü-Striche */
-}
-
-.burger:before {
-  transform: translateY(-8px);
-  /* Position des oberen Strichs */
-}
-
-.burger:after {
-  transform: translateY(8px);
-  /* Position des unteren Strichs */
-}
-
-.active.burger:before {
-  transform: translateY(0) rotate(45deg);
-  /* Rotation des oberen Strichs im aktiven Zustand */
-}
-
-.active.burger:after {
-  transform: translateY(0) rotate(-45deg);
-  /* Rotation des unteren Strichs im aktiven Zustand */
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  will-change: transform;
-
-  z-index: 999;
-}
-
-.overlay-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  gap: 0.5em;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--background-color);
-}
-
-.menu-item {
-  display: flex;
-  cursor: pointer;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.menu-item p {
-  position: relative;
-  text-align: center;
-
-  margin: 1rem;
-
-  font-size: 8vw;
-  line-height: 100%;
-  will-change: transform;
-  transition: letter-spacing 0.3s;
-}
-
-.menu-item p:hover {
-  letter-spacing: 0.015em;
-}
-
-.menu-item a {
-  font-family: Subfont;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1920px) {
-  .toggle-btn {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  .toggle-btn {
-    display: flex;
-  }
-
-  .nav-items {
-    display: none;
-  }
-
-  .logo-main img {
-    display: none;
-  }
 }
 
 @media (max-width: 900px) {
@@ -754,7 +519,6 @@ textarea#message {
 }
 
 @media (min-width: 900px) {
-
   html,
   body {
     height: 100%;
@@ -794,7 +558,6 @@ textarea#message {
 }
 
 @media only screen and (max-width: 767px) {
-
   /* Für iPhone */
   .kitchen-content {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -805,7 +568,6 @@ textarea#message {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
   /* Für iPad */
   .kitchen-content {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

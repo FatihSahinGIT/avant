@@ -1,0 +1,224 @@
+/* =================== NAV ===================  */
+
+/* === NAV GENERAL ===  */
+nav {
+  position: fixed;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+
+  z-index: 1000;
+
+  transition: background-color 0.25s ease-in-out;
+}
+
+nav.scrolled {
+  background: var(--accent-color);
+  z-index: 9999;
+}
+
+nav > div {
+  flex: 1;
+}
+
+#nav-header,
+nav h2 a {
+  font-family: Subfont;
+  height: auto;
+  font-size: 1.25rem;
+  max-width: max-content;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 4em;
+  color: var(--text-color);
+}
+
+#nav-header:visited {
+  color: var(--text-color);
+}
+
+/* === NAV ITEMS ===  */
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-content: center;
+
+  padding: 1rem;
+
+  gap: 2rem;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  cursor: pointer;
+  font-family: Switzer-Semibold;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 5px;
+  background-color: var(--danger-color);
+  transition: width 0.25s ease-in-out;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+/* === TOGGLE BUTTON ===  */
+.toggle-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* === BURGER MENU BUTTON ===  */
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75em 2em 1.5em 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.5rem;
+  outline: none;
+}
+
+.burger:before,
+.burger:after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  transition: all 250ms ease-out;
+  background-color: var(--text-color);
+}
+
+.burger:before {
+  transform: translateY(-8px);
+}
+
+.burger:after {
+  transform: translateY(8px);
+}
+
+.active.burger:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.active.burger:after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/* === OVERLAY ===  */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  will-change: transform;
+
+  z-index: 999;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+}
+
+/* === MENU ITEM */
+.menu-item {
+  display: flex;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-item p {
+  position: relative;
+  text-align: center;
+
+  margin: 1rem;
+
+  font-size: 8vw;
+  line-height: 100%;
+  will-change: transform;
+  transition: letter-spacing 0.3s;
+}
+
+.menu-item p:hover {
+  letter-spacing: 0.015em;
+}
+
+.menu-item a {
+  font-family: Subfont;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* ============= MEDIA QUERIES ============= */
+
+/* === LARGE SCREEN === */
+@media screen and (max-width: 1920px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+
+/* === MOBILE SCREEN === */
+
+@media (max-width: 900px) {
+  .toggle-btn {
+    display: flex;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .logo-main img {
+    display: none;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+}
+
+/* ============= KEYFRAMES ============= */
+@keyframes drawBorder {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
