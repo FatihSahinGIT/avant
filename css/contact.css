@@ -1,0 +1,152 @@
+/* =================== CONTACT ===================  */
+
+.contact {
+  padding-top: 80px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.col {
+  width: 80%;
+  padding: 1em 2em;
+}
+
+.marquee {
+  width: 1000%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 1.2em;
+}
+
+.marquee span {
+  font-family: Subfont;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 5em;
+  text-transform: uppercase;
+  display: inline-block;
+  animation: marquee-animation 120s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.contact-section h3 {
+  font-family: Switzer-Semibold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--secondary-accent-color);
+}
+
+.contact-section span {
+  text-transform: uppercase;
+}
+
+.contact-details p {
+  font-family: Switzer-Regular;
+  font-size: 1.5rem;
+  line-height: auto;
+  letter-spacing: -1px;
+  padding-top: 1.5em;
+}
+
+.item {
+  padding: 6em 0 0 0;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.address {
+  padding-left: 7em;
+}
+
+input {
+  font-family: Switzer-Regular;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--secondary-accent-color);
+  font-size: 24px;
+  padding: 0.4em;
+  width: 100%;
+  color: #fff;
+  margin-right: 0.4em;
+}
+
+.row {
+  display: flex;
+  margin: 1em 0 !important;
+}
+
+textarea#message {
+  font-family: Switzer-Regular;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--secondary-accent-color);
+  font-size: 24px;
+  padding: 0.4em;
+  width: 100%;
+  color: var(--text-color);
+}
+
+button {
+  all: unset;
+  background: none;
+}
+
+button a {
+  font-family: Subfont;
+  text-decoration: none;
+  border-radius: 4px;
+  color: var(--text-color);
+  padding: 0.25rem;
+}
+
+.submit {
+  background: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.submit a {
+  font-family: Switzer-Bold;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.send-icon {
+  font-size: 60px;
+}
+
+@media (min-width: 900px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  .contact-section {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .col {
+    width: 100%;
+  }
+}
