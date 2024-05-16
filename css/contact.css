@@ -149,4 +149,9 @@ button a {
   .col {
     width: 100%;
   }
+
+  .contact-section {
+    width: 100%;
+    display: flex;
+  }
 }

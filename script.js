@@ -77,4 +77,15 @@ document.addEventListener("click", function () {
     ease: "cubic",
     stagger: 0.05,
   });
+
+  // EMAIL
+  sendEmail = () => {
+    const emailParams = {
+      name: document.getElementById("name"),
+      email: document.getElementById("email"),
+      message: document.getElementById("message"),
+    };
+
+    console.log(emailParams);
+  };
 });

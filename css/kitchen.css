@@ -1,0 +1,68 @@
+/* =================== MAIN ===================  */
+
+.kitchen {
+  padding-top: 80px;
+  width: 100vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.kitchen-content {
+  width: 100%;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.kitchen-card {
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.kitchen-card:hover {
+  transform: scale(1.025);
+  border-radius: 4px;
+}
+
+.kitchen-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === MEDIA QUERIES === */
+@media only screen and (max-width: 767px) {
+  .kitchen-content {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .kitchen-content {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+}
+
+#single-product {
+  height: 100vh;
+}
+
+#single-product .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#single-product-img {
+  height: auto;
+  width: 500px;
+  max-width: 100%;
+}
