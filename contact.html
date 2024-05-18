@@ -7,54 +7,53 @@
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
-    <div class="website-content">
-      <div class="website-content" id="website-content">
-        <nav id="navbar">
-          <div class="info">
-            <h2><a id="nav-header" href="/avant/index.html">Avant Kitchen</a></h2>
+    <div class="website-content" id="website-content">
+      <nav id="navbar">
+        <div class="info">
+          <h2><a id="nav-header" href="/avant/index.html">Avant Kitchen</a></h2>
+        </div>
+
+        <div class="toggle-btn">
+          <button
+            class="burger"
+            onclick="this.classList.toggle('active');"
+          ></button>
+        </div>
+
+        <div class="nav-items">
+          <div class="nav-item">
+            <li><a href="#about">Über uns</a></li>
           </div>
-  
-          <div class="toggle-btn">
-            <button
-              class="burger"
-              onclick="this.classList.toggle('active');"
-            ></button>
+          <div class="nav-item">
+            <li><a href="/kitchen.html">Projekte</a></li>
           </div>
-  
-          <div class="nav-items">
-            <div class="nav-item">
-              <li><a href="#about">Über uns</a></li>
-            </div>
-            <div class="nav-item">
-              <li><a href="/kitchen.html">Projekte</a></li>
-            </div>
-            <div class="nav-item">
-              <li><a href="/contact.html">Kontakt</a></li>
+          <div class="nav-item">
+            <li><a href="/contact.html">Kontakt</a></li>
+          </div>
+        </div>
+      </nav>
+      <div class="overlay">
+        <div class="overlay-menu">
+          <div class="menu-item">
+            <div class="menu-item-name">
+              <p id="active"><a href="#about">Über Uns</a></p>
             </div>
           </div>
-        </nav>
-        <div class="overlay">
-          <div class="overlay-menu">
-            <div class="menu-item">
-              <div class="menu-item-name">
-                <p id="active"><a href="#about">Über Uns</a></p>
-              </div>
+          <div class="menu-item">
+            <div class="menu-item-name">
+              <p><a href="/avant/kitchen.html">Projekte</a></p>
             </div>
-            <div class="menu-item">
-              <div class="menu-item-name">
-                <p><a href="/avant/kitchen.html">Projekte</a></p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-name">
-                <p><a href="/avant/contact.html">Kontakt</a></p>
-              </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">
+              <p><a href="/avant/contact.html">Kontakt</a></p>
             </div>
           </div>
         </div>
+      </div>
 
-        
       <div class="contact" id="contact">
         <div class="marquee">
           <span>
@@ -67,9 +66,14 @@
         <div class="contact-section">
           <div class="contact-details col">
             <p>
-              Sie können uns über verschiedene Kanäle erreichen. Bitte zögern Sie nicht, uns bei Fragen, Anregungen oder Anfragen zu kontaktieren. <br /> <br />
-              
-              Alternativ können Sie auch das untenstehende Formular verwenden, um uns eine Nachricht zu senden. Wir werden uns so schnell wie möglich bei Ihnen melden.
+              Sie können uns über verschiedene Kanäle erreichen. Bitte zögern
+              Sie nicht, uns bei Fragen, Anregungen oder Anfragen zu
+              kontaktieren. <br />
+              <br />
+
+              Alternativ können Sie auch das untenstehende Formular verwenden,
+              um uns eine Nachricht zu senden. Wir werden uns so schnell wie
+              möglich bei Ihnen melden.
             </p>
 
             <div class="contact-info">
@@ -83,258 +87,57 @@
               </div>
             </div>
           </div>
-          <form action="https://api.web3forms.com/submit" method="POST">
-          <div class="contact-form col">
-
-            <input type="hidden" name="access_key" value="65e28739-a48f-4d5d-a54e-71388052fbd8">
-            <div class="wrapper">
-              <div class="row">
-                <input type="text" placeholder="Name" id="name" />
-                
-              </div>
-              <div class="row">
-                <input type="text" placeholder="Email" id="email" />
-                
-              </div>
-              <div class="row">
-                <textarea
-                  type="text"
-                  placeholder="Message"
-                  rows="5"
-                  id="message"
-                ></textarea>
-              </div>
-              <div class="row submit">
-                <button type="submit" onclick="sendEmail()"><a href="#">Anfrage schicken</a></button>
-                <div class="send-icon">
-                  <ion-icon name="arrow-forward-sharp"></ion-icon>
+          <form>
+            <div class="contact-form col">
+              <input
+                type="hidden"
+                name="access_key"
+                value="65e28739-a48f-4d5d-a54e-71388052fbd8"
+              />
+              <div class="wrapper">
+                <div class="row">
+                  <input type="text" placeholder="Vorname" id="name" />
+                  <input type="text" placeholder="Nachname" id="name" />
+                </div>
+                <div class="row">
+                  <input type="text" placeholder="E-Mail" id="email" />
+                </div>
+                <div class="row">
+                  <textarea
+                    type="text"
+                    placeholder="Nachricht"
+                    rows="5"
+                    id="message"
+                  ></textarea>
+                </div>
+                <div class="row">
+                  <input type="file" id="file-input" />
+                </div>
+                <div class="row submit">
+                  <button type="submit" onclick="sendEmail()">
+                    <a href="#">Versenden</a>
+                  </button>
+                  <div class="send-icon">
+                    <ion-icon name="arrow-forward-sharp"></ion-icon>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          
+          </form>
         </div>
-    
       </div>
-    </form>
     </div>
   </body>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-      emailjs.init({
-        publicKey: "rc3DA4opNxQOmo6Gn",
-      });
-   })();
-</script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-  <script src="https://web3forms.com/client/script.js" async defer></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const lenis = new Lenis();
+  <script src="./assets/js/general/lenis.js"></script>
+  <script src="./assets/js/general/nav.js"></script>
 
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-
-      function closeNavigation() {
-        timeline.reverse();
-        toggleButton.classList.remove("active");
-        isOpen = false;
-      }
-
-        // EMAIL
-  sendEmail = () => {
-    const emailParams = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
-
-    console.log(emailParams);
-
-    emailjs.send('service_80m6u8c', 'template_3of2maa', emailParams).then(alert("E-Mail send"));
-  };
-
-      let activeItemIndicator = CSSRulePlugin.getRule(
-        ".menu-item p#active::after"
-      );
-      const toggleButton = document.querySelector(".burger");
-      let isOpen = false;
-
-      gsap.set(".menu-item p", { y: 225 });
-
-      const timeline = gsap.timeline({ paused: true });
-
-      timeline.to(".overlay", {
-        duration: 1.5,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        ease: "power4.inOut",
-      });
-
-      timeline.to(
-        ".menu-item p",
-        {
-          duration: 1.5,
-          y: 0,
-          stagger: 0.2,
-          ease: "power4.out",
-        },
-        "-=1"
-      );
-
-      timeline.to(
-        activeItemIndicator,
-        {
-          width: "100%",
-          duration: 1,
-          ease: "power4.out",
-          delay: 0.5,
-        },
-        "<"
-      );
-
-      timeline.to(
-        ".sub-nav",
-        {
-          bottom: "10%",
-          opacity: 1,
-          duration: 0.5,
-          delay: 0.5,
-        },
-        "<"
-      );
-
-      toggleButton.addEventListener("click", function () {
-        if (isOpen) {
-          timeline.reverse();
-        } else {
-          timeline.play();
-        }
-        isOpen = !isOpen;
-      });
-
-      const nav = document.querySelector("nav");
-
-      const navLinks = document.querySelectorAll(".menu-item a");
-
-      navLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-          closeNavigation();
-        });
-      });
-
-      gsap.from(nav, {
-        duration: 1.5,
-        delay: 0.5,
-        y: -20,
-        opacity: 0,
-        ease: "power4.out",
-      });
-
-      const h1 = document.querySelector(".main h1");
-      const p = document.querySelector(".main p");
-
-      gsap.from(h1, {
-        duration: 1,
-        delay: 1,
-        y: 10,
-        opacity: 0,
-        ease: "power2.out",
-      });
-
-      gsap.from(p, {
-        duration: 1.25,
-        delay: 1.25,
-        y: 20,
-        opacity: 0,
-        ease: "power3.out",
-      });
-
-      gsap.from(".about-img img", {
-        x: "-100%", // Startposition des Bildes außerhalb des Viewports auf der linken Seite
-        opacity: 0, // Anfangs unsichtbar
-        duration: 4, // Dauer der Animation
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".about", // Der Triggerpunkt ist die 'about' Klasse
-          start: "top 70%", // Starte die Animation, wenn das obere Ende des Elements 80% des Viewports erreicht hat
-          end: "bottom 50%", // Stoppe die Animation, wenn das obere Ende des Elements 50% des Viewports erreicht hat
-          scrub: true, // Aktiviere das 'scrubbing', um die Animation mit dem Scrollen zu synchronisieren
-        },
-      });
-
-      gsap.from(".about-text-container > *", {
-        x: "100%", // Startposition des Bildes außerhalb des Viewports auf der linken Seite
-        opacity: 0, // Anfangs unsichtbar
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: ".about", // Der Triggerpunkt ist die 'about' Klasse
-          start: "top 70%", // Starte die Animation, wenn das obere Ende des Elements 80% des Viewports erreicht hat
-          end: "bottom 50%", // Stoppe die Animation, wenn das obere Ende des Elements 50% des Viewports erreicht hat
-          scrub: true, // Aktiviere das 'scrubbing', um die Animation mit dem Scrollen zu synchronisieren
-        },
-      });
-
-      // Get the navigation element
-      // Get the navigation element
-      const navbar = document.getElementById("navbar");
-
-      // Listen for scroll events
-      window.addEventListener("scroll", () => {
-        // Check if the user has scrolled down
-        if (window.scrollY > 0) {
-          // Add the 'scrolled' class to the navigation
-          navbar.classList.add("scrolled");
-        } else {
-          // Remove the 'scrolled' class if the user scrolls back to the top
-          navbar.classList.remove("scrolled");
-        }
-      });
-
-      gsap.registerPlugin(ScrollTrigger);
-    });
-
-    function showKitchen() {
-      // Alle Abschnitte außer dem kitchen-div ausblenden
-      document
-        .querySelectorAll(".main, .contact, .about, .projects")
-        .forEach(function (section) {
-          section.style.display = "none";
-        });
-      // kitchen-div anzeigen
-      document.getElementById("kitchen").style.display = "block";
-    }
-
-    function showAllSections() {
-      // Alle Abschnitte wieder anzeigen
-      document
-        .querySelectorAll(".main, .contact, .about, .projects")
-        .forEach(function (section) {
-          section.style.display = "block";
-        });
-      // kitchen-div ausblenden
-      document.getElementById("kitchen").style.display = "none";
-    }
-
-    document.querySelectorAll(".kitchen-card img").forEach(function (image) {
-      image.addEventListener("click", function () {
-        const imageSrc = this.getAttribute("data-src");
-        const info = this.getAttribute("data-info");
-        showAllSections();
-        showSingleProduct(imageSrc, info);
-      });
-    });
-  </script>
+  <script src="./assets/js/pages/contact.js"></script>
 </html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Kueche Beispiel 1",
+    "img": "assets/img/kitchen-images/Kueche1/tresenstuhl.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 1"
+  },
+  {
+    "id": 2,
+    "name": "Kueche Beispiel 2",
+    "img": "assets/img/kitchen-images/Kueche2/kuecheninsel.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 2"
+  },
+  {
+    "id": 3,
+    "name": "Kueche Beispiel 3",
+    "img": "assets/img/kitchen-images/Kueche3/kuecheninsel.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 3"
+  },
+  {
+    "id": 4,
+    "name": "Kueche Beispiel 4",
+    "img": "assets/img/kitchen-images/Kueche4/kuechentresen.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 4"
+  },
+  {
+    "id": 5,
+    "name": "Kueche Beispiel 5",
+    "img": "assets/img/kitchen-images/Kueche5/kuecheninstal.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 5"
+  },
+  {
+    "id": 6,
+    "name": "Kueche Beispiel 6",
+    "img": "assets/img/kitchen-images/Kueche6/kuehlschrank.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 6"
+  },
+  {
+    "id": 7,
+    "name": "Kueche Beispiel 7",
+    "img": "assets/img/kitchen-images/Kueche7/kuechenherd.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 7"
+  },
+  {
+    "id": 8,
+    "name": "Kueche Beispiel 8",
+    "img": "assets/img/kitchen-images/Kueche8/kuechenmarmor.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 8"
+  },
+  {
+    "id": 9,
+    "name": "Kueche Beispiel 9",
+    "img": "assets/img/kitchen-images/Kueche9/kuecheninsel.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 9"
+  },
+  {
+    "id": 10,
+    "name": "Kueche Beispiel 10",
+    "img": "assets/img/kitchen-images/Kueche10/kuecheled.jpg",
+    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 10"
+  }
+]

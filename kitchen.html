@@ -6,21 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <div class="website-content">
       <div class="website-content" id="website-content">
         <nav id="navbar">
           <div class="info">
-            <h2><a id="nav-header" href="/avant/index.html">Avant Kitchen</a></h2>
+            <h2>
+              <a id="nav-header" href="/">Avant Kitchen</a>
+            </h2>
           </div>
-  
+
           <div class="toggle-btn">
             <button
               class="burger"
               onclick="this.classList.toggle('active');"
             ></button>
           </div>
-  
+
           <div class="nav-items">
             <div class="nav-item">
               <li><a href="#about">Über uns</a></li>
@@ -53,107 +56,10 @@
           </div>
         </div>
 
-      <div class="kitchen" id="kitchen">
-        <div class="kitchen-content">
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche1/tresen.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche1/tresenstuhl.jpg"
-              data-info='{"titel": "Mein Titel", "beschreibung": "Eine Beschreibung des Objekts.", "datum": "04.05.2024", "autor": "Max Mustermann"}'
-            />
-          </div>
-
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche2/kuecheninsel.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche1/tresenstuhl.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche4/kuechentresen.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche5/kuecheninstal.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche6/waschbecken.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche7/kuechenherd.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche8/kuechenmarmor.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche9/kuecheninsel.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
-          <div class="kitchen-card">
-            <img
-              src="./assets/img/kitchen-images/Kueche10/kuecheled.jpg"
-              alt="Kitchen 1"
-              class="kitchen-image"
-              data-src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-              data-info='{"titel": "Mein Titel2", "beschreibung": "Eine Beschreibung des Objekts. 2 ", "datum": "04.05.2024  2", "autor": "Max Mustermann 22"}'
-            />
-          </div>
+        <div class="container">
+          <div class="title">KÜCHEN</div>
+          <div class="listProduct"></div>
         </div>
-      </div>
-
-      <div id="single-product" style="display: none">
-        <img src="" id="single-product-img" alt="Single Product Image" />
-        <div class="info"></div>
-        <button><a href="/kitchen.html">Back to all</a></button>
       </div>
     </div>
   </body>
@@ -162,220 +68,11 @@
   <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const lenis = new Lenis();
+  <script src="./assets/js/general/lenis.js"></script>
+  <script src="./assets/js/general/nav.js"></script>
 
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-
-      function closeNavigation() {
-        timeline.reverse();
-        toggleButton.classList.remove("active");
-        isOpen = false;
-      }
-
-      let activeItemIndicator = CSSRulePlugin.getRule(
-        ".menu-item p#active::after"
-      );
-      const toggleButton = document.querySelector(".burger");
-      let isOpen = false;
-
-      gsap.set(".menu-item p", { y: 225 });
-
-      const timeline = gsap.timeline({ paused: true });
-
-      timeline.to(".overlay", {
-        duration: 1.5,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        ease: "power4.inOut",
-      });
-
-      timeline.to(
-        ".menu-item p",
-        {
-          duration: 1.5,
-          y: 0,
-          stagger: 0.2,
-          ease: "power4.out",
-        },
-        "-=1"
-      );
-
-      timeline.to(
-        activeItemIndicator,
-        {
-          width: "100%",
-          duration: 1,
-          ease: "power4.out",
-          delay: 0.5,
-        },
-        "<"
-      );
-
-      timeline.to(
-        ".sub-nav",
-        {
-          bottom: "10%",
-          opacity: 1,
-          duration: 0.5,
-          delay: 0.5,
-        },
-        "<"
-      );
-
-      toggleButton.addEventListener("click", function () {
-        if (isOpen) {
-          timeline.reverse();
-        } else {
-          timeline.play();
-        }
-        isOpen = !isOpen;
-      });
-
-      const nav = document.querySelector("nav");
-
-      const navLinks = document.querySelectorAll(".menu-item a");
-
-      navLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-          closeNavigation();
-        });
-      });
-
-      gsap.from(nav, {
-        duration: 1.5,
-        delay: 0.5,
-        y: -20,
-        opacity: 0,
-        ease: "power4.out",
-      });
-
-      const h1 = document.querySelector(".main h1");
-      const p = document.querySelector(".main p");
-
-      gsap.from(h1, {
-        duration: 1,
-        delay: 1,
-        y: 10,
-        opacity: 0,
-        ease: "power2.out",
-      });
-
-      gsap.from(p, {
-        duration: 1.25,
-        delay: 1.25,
-        y: 20,
-        opacity: 0,
-        ease: "power3.out",
-      });
-
-      gsap.from(".about-img img", {
-        x: "-100%", // Startposition des Bildes außerhalb des Viewports auf der linken Seite
-        opacity: 0, // Anfangs unsichtbar
-        duration: 4, // Dauer der Animation
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".about", // Der Triggerpunkt ist die 'about' Klasse
-          start: "top 70%", // Starte die Animation, wenn das obere Ende des Elements 80% des Viewports erreicht hat
-          end: "bottom 50%", // Stoppe die Animation, wenn das obere Ende des Elements 50% des Viewports erreicht hat
-          scrub: true, // Aktiviere das 'scrubbing', um die Animation mit dem Scrollen zu synchronisieren
-        },
-      });
-
-      gsap.from(".about-text-container > *", {
-        x: "100%", // Startposition des Bildes außerhalb des Viewports auf der linken Seite
-        opacity: 0, // Anfangs unsichtbar
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: ".about", // Der Triggerpunkt ist die 'about' Klasse
-          start: "top 70%", // Starte die Animation, wenn das obere Ende des Elements 80% des Viewports erreicht hat
-          end: "bottom 50%", // Stoppe die Animation, wenn das obere Ende des Elements 50% des Viewports erreicht hat
-          scrub: true, // Aktiviere das 'scrubbing', um die Animation mit dem Scrollen zu synchronisieren
-        },
-      });
-
-      // Get the navigation element
-      // Get the navigation element
-      const navbar = document.getElementById("navbar");
-
-      // Listen for scroll events
-      window.addEventListener("scroll", () => {
-        // Check if the user has scrolled down
-        if (window.scrollY > 0) {
-          // Add the 'scrolled' class to the navigation
-          navbar.classList.add("scrolled");
-        } else {
-          // Remove the 'scrolled' class if the user scrolls back to the top
-          navbar.classList.remove("scrolled");
-        }
-      });
-
-      gsap.registerPlugin(ScrollTrigger);
-    });
-
-    function showKitchen() {
-      // Alle Abschnitte außer dem kitchen-div ausblenden
-      document
-        .querySelectorAll(".main, .contact, .about, .projects")
-        .forEach(function (section) {
-          section.style.display = "none";
-        });
-      // kitchen-div anzeigen
-      document.getElementById("kitchen").style.display = "block";
-    }
-
-    function showAllSections() {
-      // Alle Abschnitte wieder anzeigen
-      document
-        .querySelectorAll(".main, .contact, .about, .projects")
-        .forEach(function (section) {
-          section.style.display = "block";
-        });
-      // kitchen-div ausblenden
-      document.getElementById("kitchen").style.display = "none";
-    }
-
-    function showSingleProduct(imageSrc, info) {
-      // Alle Abschnitte außer dem Single Product Div ausblenden
-      document.querySelectorAll(".kitchen").forEach(function (section) {
-        section.style.display = "none";
-      });
-      // Single Product Div anzeigen und Inhalt setzen
-      const singleProductDiv = document.getElementById("single-product");
-      singleProductDiv.style.display = "block";
-      singleProductDiv.querySelector("img").src = imageSrc;
-
-      // Konvertiere den JSON-String in ein JavaScript-Objekt
-      const infoObj = JSON.parse(info);
-
-      // Setze die Informationen in das HTML
-      const infoContainer = singleProductDiv.querySelector(".info");
-      infoContainer.innerHTML = ""; // Clear previous content
-
-      // Iteriere über die Schlüssel im Objekt und füge sie dem HTML hinzu
-      for (const key in infoObj) {
-        if (infoObj.hasOwnProperty(key)) {
-          const value = infoObj[key];
-          const paragraph = document.createElement("p");
-          paragraph.innerHTML = `<strong>${key}:</strong> ${value}`;
-          infoContainer.appendChild(paragraph);
-        }
-      }
-    }
-
-    document.querySelectorAll(".kitchen-card img").forEach(function (image) {
-      image.addEventListener("click", function () {
-        const imageSrc = this.getAttribute("data-src");
-        const info = this.getAttribute("data-info");
-        showAllSections();
-        showSingleProduct(imageSrc, info);
-      });
-    });
-  </script>
+  <script src="./assets/js/pages/kitchen.js"></script>
 </html>

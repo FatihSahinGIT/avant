@@ -1,7 +1,7 @@
 /* =================== CONTACT ===================  */
 
 .contact {
-  padding-top: 80px;
+  padding-top: 120px;
   width: 100vw;
   height: 100vh;
 }
@@ -16,7 +16,8 @@
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  padding-top: 1.2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--text-color);
 }
 
 .marquee span {
@@ -39,6 +40,10 @@
   }
 }
 
+.contact-section {
+  margin-top: 4rem;
+}
+
 .contact-section h3 {
   font-family: Switzer-Semibold;
   font-size: 1rem;
@@ -51,6 +56,7 @@
 }
 
 .contact-details p {
+  width: 90%;
   font-family: Switzer-Regular;
   font-size: 1.5rem;
   line-height: auto;
@@ -59,7 +65,7 @@
 }
 
 .item {
-  padding: 6em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 .contact-info {
@@ -86,6 +92,10 @@ input {
 .row {
   display: flex;
   margin: 1em 0 !important;
+}
+
+form {
+  width: 80%;
 }
 
 textarea#message {
@@ -115,16 +125,17 @@ button a {
 }
 
 .submit {
-  background: none;
-  width: 100%;
   justify-content: space-between;
 }
 
-.submit a {
+.submit button {
   font-family: Switzer-Bold;
   text-decoration: none;
   color: var(--accent-color);
-  font-size: 60px;
+  background-color: var(--danger-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
