@@ -82,7 +82,7 @@ nav h2 a {
 
 /* === TOGGLE BUTTON ===  */
 .toggle-btn {
-  display: flex;
+  display: none; /* Hide by default */
   justify-content: flex-end;
 }
 
@@ -186,20 +186,24 @@ nav h2 a {
 /* ============= MEDIA QUERIES ============= */
 
 /* === LARGE SCREEN === */
-@media screen and (max-width: 1920px) {
+@media (min-width: 901px) {
   .toggle-btn {
-    display: none;
+    display: none; /* Ensure the burger menu is hidden on large screens */
+  }
+
+  .nav-items {
+    display: flex; /* Ensure nav items are displayed on large screens */
   }
 }
 
 /* === MOBILE SCREEN === */
 @media (max-width: 900px) {
   .toggle-btn {
-    display: flex;
+    display: flex; /* Show the burger menu button on small screens */
   }
 
   .nav-items {
-    display: none;
+    display: none; /* Hide the nav items on small screens */
   }
 
   .logo-main img {
@@ -221,3 +225,4 @@ nav h2 a {
     width: 100%;
   }
 }
+

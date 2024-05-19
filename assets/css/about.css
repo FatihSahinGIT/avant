@@ -1,69 +1,191 @@
 /* =================== ABOUT ===================  */
 
 .about {
+  width: 100%;
   height: 100vh;
-  width: 100vw;
-  padding-top: 80px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .about-content {
-  width: 80%;
+  width: 95%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  overflow-x: hidden;
+  padding: 10rem 0;
+}
+
+.about-content .about-image-container {
+  overflow: hidden;
+  width: 820px;
+}
+
+.about-content .about-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.75s ease-in-out;
+}
+
+.about-content .about-image-container img:hover {
+  transform: scale(1.25);
+}
+
+.about-content .about-text-container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  align-content: center;
+  padding-left: 30px;
 }
 
-.about img {
-  height: auto;
-  width: 600px;
-  border-radius: 8px;
-}
-
-.about-text-container {
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.about h4 {
+.about-content .about-text-container h2 {
   font-family: Subfont;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: var(--text-color);
+  padding-bottom: 20px;
 }
 
-.about p {
-  font-family: Switzer-Light;
-  font-size: 1.35rem;
+#new {
+  text-transform: none;
+  color: var(--danger-color);
+}
+
+.about-content .about-text-container p {
+  font-family: Switzer-Regular;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  color: var(--secondary-accent-color);
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.about-content .about-text-container button {
+  cursor: pointer;
+}
+
+.about-content .about-text-container span {
+  text-transform: uppercase;
+}
+
+.about-content .about-text-container a {
+  cursor: pointer;
+  font-family: Switzer-Bold;
+  all: unset;
+
+  letter-spacing: -1.25px;
+
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  background-color: var(--text-color);
+  border-radius: 4px;
+  padding: 0.25rem;
+
+  transition: 0.5s ease-in-out;
+}
+
+.about-content .about-text-container a:hover {
+  color: var(--danger-color);
+  background-color: var(--text-color);
 }
 
 /* ============= MEDIA QUERIES ============= */
 
 /* === MOBILE SCREEN === */
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .about-content {
-    flex-direction: column;
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .about img {
-    width: 300px;
-  }
-
-  .about h4 {
-    text-align: center;
-    font-size: 1.5rem;
+  .about-content .about-image-container {
     margin-left: auto;
     margin-right: auto;
+    width: 500px;
   }
 
-  .about p {
+  .about-content .about-text-container span {
+    font-size: 12px;
+  }
+
+  .about-content .about-text-container h2,
+  #new {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .about-content .about-text-container p {
+    font-size: 16px;
+    letter-spacing: normal;
+    padding-bottom: 10px;
+  }
+
+  .about-content .about-text-container {
+    padding-left: 0;
+  }
+
+  .about-content .about-text-container a {
+    all: unset;
+
+    letter-spacing: normal;
+
     font-size: 1rem;
+    color: var(--accent-color);
+    background-color: var(--text-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    width: 90%;
+  }
+
+  .about-content .about-text-container h2,
+  #new {
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+  }
+
+  .about-content .about-text-container p {
+    line-height: 24px;
+  }
+
+  .about-content .about-text-container a {
+    all: unset;
+
+    letter-spacing: normal;
+
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    background-color: var(--text-color);
+    border-radius: 4px;
+    padding: 0.25rem;
+
+    transition: 0.5s ease-in-out;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-content .about-image-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+
+  .about-content .about-text-container h2,
+  #new {
+    font-size: 4.25rem;
+    padding-bottom: 30px;
+  }
+
+  .about-content .about-text-container p {
+    font-size: 3rem;
+    letter-spacing: normal;
+    padding-bottom: 30px;
   }
 }
