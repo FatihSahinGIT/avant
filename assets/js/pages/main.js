@@ -26,20 +26,18 @@ gsap.from(mainbtn, {
   ease: "power3.out",
 });
 
-gsap.from(".about-img img", {
+gsap.from(".about-image-container img", {
   x: "-100%",
   opacity: 0,
-  duration: 4,
-  ease: "power3.out",
+  ease: "power4.out",
   scrollTrigger: {
     trigger: ".about",
     start: "top 70%",
-    end: "bottom 50%",
-    scrub: true,
+    end: "bottom 60%",
   },
 });
 
-gsap.from(".about-text-container > *", {
+gsap.from(".about-text-container", {
   x: "100%",
   opacity: 0,
   ease: "power4.out",
