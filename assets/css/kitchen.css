@@ -3,7 +3,6 @@
 .kitchen {
   padding-top: 100px;
   width: 100vw;
-
   display: grid;
   place-items: center;
 }
@@ -28,9 +27,8 @@
 
 .kitchen-list .item img {
   width: 100%;
-  height: 800px;
-  max-width: 800px;
-  object-fit: cover;
+  height: 100%; /* Anpassung der Höhe auf 100%, damit das Bild vollständig angezeigt wird */
+  object-fit: cover; /* Beibehaltung von object-fit, um das Bild korrekt zu skalieren */
 }
 
 .kitchen-list {
@@ -84,6 +82,7 @@
   .kitchen-content {
     width: 100vw;
   }
+
   .kitchen-list {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -109,6 +108,16 @@
 
   .kitchen-list {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  .kitchen-list {
+    grid-template-columns: repeat(2, 1fr); /* Einzelne Spalte bei großen Bildschirmen */
+  }
+
+  .kitchen-list .item img {
+    height: 1000px; /* Anpassung der Höhe bei großen Bildschirmen */
   }
 }
 
