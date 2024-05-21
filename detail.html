@@ -58,10 +58,22 @@
           <div class="detail-text-container">
             <h1 class="title"></h1>
             <p class="desc"></p>
-            <div class="buttons">Anfrage</div>
+            <div class="buttons">
+              <button id="buttons_contact">
+                <a href="/contact.html">Anfrage</a>
+              </button>
+              <button id="buttons_back">
+                <a href="/kitchen.html">Zurück</a>
+              </button>
+            </div>
           </div>
           <div class="image">
             <img src="" alt="" />
+          </div>
+
+          <div id="image-modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image" />
           </div>
         </div>
 
@@ -71,6 +83,33 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <div class="footer-logo">
+        <img
+          src="./assets/img/logo/Logo-transformed-transformed.png"
+          alt="Avant Kitchen Illustration"
+        />
+      </div>
+
+      <div class="footer-quicklinks">
+        <ul>
+          <h5>Quick Links</h5>
+          <li><a href="#about">Über Uns</a></li>
+          <li><a href="/kitchen.html">Projekte</a></li>
+          <li><a href="/contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <ul>
+          <h5>Adresse</h5>
+          <li><a>Testadresse 12, 12494 Berlin</a></li>
+
+          <li><a>Impressum</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>

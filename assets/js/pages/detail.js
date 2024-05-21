@@ -41,6 +41,31 @@ function showDetail() {
   headerElement.innerText = thisProduct.name;
   header.appendChild(headerElement);
 
+  // Modal Elemente
+  var modal = document.getElementById("image-modal");
+  var modalImg = document.getElementById("modal-image");
+  var span = document.getElementsByClassName("close")[0];
+
+  // Fügt einen Klick-Listener zu jedem Bild hinzu
+  imageContainer.querySelectorAll("img").forEach((img) => {
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    };
+  });
+
+  // Schließt das Modal, wenn der Benutzer auf das "x" klickt
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // Schließt das Modal, wenn der Benutzer irgendwo außerhalb des Bildes klickt
+  modal.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+
   // Similar Products
   let listProduct = document.querySelector(".kitchen-list-similar");
   products
