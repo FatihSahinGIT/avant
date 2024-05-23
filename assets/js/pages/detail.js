@@ -22,15 +22,18 @@ function showDetail() {
     return;
   }
 
-  let imageContainer = detail.querySelector(".image");
+  let swiperWrapper = document.querySelector(".swiper-wrapper");
 
-  // Leert das Container-Element für die Bilder
-  imageContainer.innerHTML = "";
+  // Clear the Swiper container
+  swiperWrapper.innerHTML = "";
 
   thisProduct.img.forEach((imgSrc) => {
+    let swiperSlide = document.createElement("div");
+    swiperSlide.classList.add("swiper-slide");
     let imgElement = document.createElement("img");
     imgElement.src = imgSrc;
-    imageContainer.appendChild(imgElement);
+    swiperSlide.appendChild(imgElement);
+    swiperWrapper.appendChild(swiperSlide);
   });
 
   let textElement = document.createElement("p");
@@ -41,25 +44,25 @@ function showDetail() {
   headerElement.innerText = thisProduct.name;
   header.appendChild(headerElement);
 
-  // Modal Elemente
+  // Modal Elements
   var modal = document.getElementById("image-modal");
   var modalImg = document.getElementById("modal-image");
   var span = document.getElementsByClassName("close")[0];
 
-  // Fügt einen Klick-Listener zu jedem Bild hinzu
-  imageContainer.querySelectorAll("img").forEach((img) => {
+  // Add click listener to each image
+  swiperWrapper.querySelectorAll("img").forEach((img) => {
     img.onclick = function () {
       modal.style.display = "block";
       modalImg.src = this.src;
     };
   });
 
-  // Schließt das Modal, wenn der Benutzer auf das "x" klickt
+  // Close modal on "x" click
   span.onclick = function () {
     modal.style.display = "none";
   };
 
-  // Schließt das Modal, wenn der Benutzer irgendwo außerhalb des Bildes klickt
+  // Close modal on outside click
   modal.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
@@ -80,4 +83,16 @@ function showDetail() {
       `;
       listProduct.appendChild(newProduct);
     });
+
+  // Initialize Swiper
+  new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 }

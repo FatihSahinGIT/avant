@@ -28,8 +28,9 @@
 .kitchen-list .item img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
+  display: block;
+  /* Verhindert weiße Linien unter den Bildern */
 }
 
 .kitchen-list {
@@ -87,10 +88,11 @@
 }
 
 .kitchen-list-similar img {
-  width: 350px;
-  height: 350px;
-
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  /* Verhindert weiße Linien unter den Bildern */
 }
 
 .kitchen-list-similar .item {
@@ -192,51 +194,44 @@
 }
 
 .container {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .detail-text-container {
+}
+
+.detail-text-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .detail {
-  width: 95vw;
-  margin-left: auto;
-  margin-right: auto;
   padding: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .title {
   font-family: Subfont;
-  font-size: 3rem;
-  line-height: 0;
+  font-size: 1.75rem;
+  margin: 0;
 }
 
 .desc {
   font-family: Switzer-Light;
   font-size: 1.5rem;
-  padding: 1rem 0;
-}
-
-.detail .image {
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
 }
 
 .buttons {
-  margin: 3rem 0;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 #buttons_contact a {
@@ -250,7 +245,10 @@
 .detail .image img {
   height: 650px;
   width: 100%;
-
+  object-fit: cover;
+  /* Sicherstellt, dass das Bild das Container-Verhältnis bewahrt */
+  display: block;
+  /* Verhindert weiße Linien unter den Bildern */
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
@@ -266,22 +264,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .detail .image {
-    grid-template-columns: 1fr;
+  .detail {
+    flex-direction: column;
   }
 
   .detail-text-container h1 {
-    line-height: normal;
-    font-size: 4rem;
-    text-align: center;
+    line-height: 0;
+    font-size: 2rem;
   }
 
   .detail-text-container p {
     font-size: 1.5rem;
-    text-align: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
   }
 
   .kitchen-list-similar {
@@ -332,6 +326,67 @@
   transform: scale(1.2);
 }
 
+/* Anpassungen für Mobilgeräte */
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  .close {
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+  }
+}
+
+.swiper {
+  width: 80%;
+  margin: auto;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Verhindert weiße Linien unter den Bildern */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--text-color);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--text-color) !important;
+}
+
 /* Anpassungen für Tablets und kleinere Bildschirme */
 @media screen and (max-width: 768px) {
   .modal-content {
@@ -349,18 +404,8 @@
     right: 20px;
     font-size: 30px;
   }
-}
 
-/* Anpassungen für Mobilgeräte */
-@media screen and (max-width: 480px) {
-  .modal-content {
-    width: 95%;
-    max-width: 400px;
-  }
-
-  .close {
-    top: 5px;
-    right: 10px;
-    font-size: 25px;
+  .swiper {
+    width: 100%;
   }
 }
