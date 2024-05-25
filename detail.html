@@ -1,146 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-  <body>
-    <div class="website-content">
-      <nav id="navbar">
-        <div class="info">
-          <h2><a id="nav-header" href="/avant/index.html">Avant Kitchen</a></h2>
-        </div>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
 
-        <div class="toggle-btn">
-          <button
-            class="burger"
-            onclick="this.classList.toggle('active');"
-          ></button>
-        </div>
-
-        <div class="nav-items">
-          <div class="nav-item">
-            <li><a href="#about">Über uns</a></li>
-          </div>
-          <div class="nav-item">
-            <li><a href="/kitchen.html">Projekte</a></li>
-          </div>
-          <div class="nav-item">
-            <li><a href="/contact.html">Kontakt</a></li>
-          </div>
-        </div>
-      </nav>
-      <div class="overlay">
-        <div class="overlay-menu">
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p id="active"><a href="#about">Über Uns</a></p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p><a href="/avant/kitchen.html">Projekte</a></p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p><a href="/avant/contact.html">Kontakt</a></p>
-            </div>
-          </div>
-        </div>
+<body>
+  <div class="website-content">
+    <nav id="navbar">
+      <div class="info">
+        <h2><a id="nav-header" href="/avant/index.html">Avant Kitchen</a></h2>
       </div>
 
-      <div class="container">
-        <div class="detail">
-          <div class="detail-text-container">
-            <div class="detail-text-content">
-              <h1 class="title"></h1>
-              <p class="desc"></p>
-              <div class="buttons">
-                <button id="buttons_contact">
-                  <a href="/contact.html">Anfrage</a>
-                </button>
-                <button id="buttons_back">
-                  <a href="/kitchen.html">Zurück</a>
-                </button>
-            </div>
-            </div>
-          </div>
+      <div class="toggle-btn">
+        <button class="burger" onclick="this.classList.toggle('active');"></button>
+      </div>
 
-          <!-- Swiper -->
-          <div class="swiper">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <!-- Slides will be inserted here -->
-              </div>
-
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- Add Navigation -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-
-            <div id="image-modal" class="modal">
-              <span class="close">&times;</span>
-              <img class="modal-content" id="modal-image" />
-            </div>
+      <div class="nav-items">
+        <div class="nav-item">
+          <li><a href="#about">Über uns</a></li>
+        </div>
+        <div class="nav-item">
+          <li><a href="/kitchen.html">Projekte</a></li>
+        </div>
+        <div class="nav-item">
+          <li><a href="/contact.html">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay">
+      <div class="overlay-menu">
+        <div class="menu-item">
+          <div class="menu-item-name">
+            <p id="active"><a href="#about">Über Uns</a></p>
           </div>
         </div>
-
-        <div class="kitchen-similar-container">
-          <div class="similar-title">Weitere Küchen</div>
-          <div class="kitchen-list-similar"></div>
+        <div class="menu-item">
+          <div class="menu-item-name">
+            <p><a href="/avant/kitchen.html">Projekte</a></p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-name">
+            <p><a href="/avant/contact.html">Kontakt</a></p>
+          </div>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="footer-logo">
-        <img
-          src="./assets/img/logo/Logo-transformed-transformed.png"
-          alt="Avant Kitchen Illustration"
-        />
+    <div class="container">
+
+      <div class="detail">
+        <div class="detail-text-container">
+          <div class="detail-text-content">
+            <h1 class="title"></h1>
+            <div class="detail-description">
+              <h4 id="detail-description__header">Beschreibung</h4>
+              <p class="desc"></p>
+            </div>
+
+            <div class="detail-description">
+              <h4 id="detail-description__header">Maße</h4>
+              <p class="detail-spec">Hier folgen mögliche Küchenmaße</p>
+            </div>
+
+            <div class="buttons">
+              <button id="buttons_contact">
+                <a href="/contact.html">Anfrage</a>
+              </button>
+              <button id="buttons_back">
+                <a href="/kitchen.html">Zurück</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slides will be inserted here -->
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <div id="image-modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image" />
+          </div>
+        </div>
       </div>
 
-      <div class="footer-quicklinks">
-        <ul>
-          <h5>Quick Links</h5>
-          <li><a href="#about">Über Uns</a></li>
-          <li><a href="/kitchen.html">Projekte</a></li>
-          <li><a href="/contact.html">Kontakt</a></li>
-        </ul>
+      <div class="kitchen-similar-container">
+        <div class="similar-title">Weitere Küchen</div>
+        <div class="kitchen-list-similar"></div>
       </div>
+      
+    </div>
+  </div>
 
-      <div class="footer-contact">
-        <ul>
-          <h5>Adresse</h5>
-          <li><a>Testadresse 12, 12494 Berlin</a></li>
+  <footer>
+    <div class="footer-logo">
+      <img src="./assets/img/logo/Logo-transformed-transformed.png" alt="Avant Kitchen Illustration" />
+    </div>
 
-          <li><a>Impressum</a></li>
-        </ul>
-      </div>
-    </footer>
+    <div class="footer-quicklinks">
+      <ul>
+        <h5>Quick Links</h5>
+        <li><a href="#about">Über Uns</a></li>
+        <li><a href="/kitchen.html">Projekte</a></li>
+        <li><a href="/contact.html">Kontakt</a></li>
+      </ul>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <div class="footer-contact">
+      <ul>
+        <h5>Adresse</h5>
+        <li><a>Testadresse 12, 12494 Berlin</a></li>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/general/lenis.js"></script>
-    <script src="./assets/js/general/nav.js"></script>
-    <script src="./assets/js/pages/detail.js"></script>
-  </body>
+        <li><a>Impressum</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/general/lenis.js"></script>
+  <script src="./assets/js/general/nav.js"></script>
+  <script src="./assets/js/pages/detail.js"></script>
+</body>
+
 </html>

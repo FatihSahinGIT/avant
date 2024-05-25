@@ -6,31 +6,31 @@
       "assets/img/kitchen-images/Kueche1/tresenstuhl.jpg",
       "assets/img/kitchen-images/Kueche1/tresen.jpg"
     ],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 1"
+    "description": "Küche Nummer 1 besticht durch ihr modernes Design und die hochwertigen Materialien. Der großzügige Tresenbereich bietet nicht nur viel Platz zum Arbeiten, sondern auch eine gemütliche Sitzgelegenheit, die ideal für gesellige Abende ist. Die Kombination aus hellen und dunklen Farbtönen verleiht dieser Küche eine elegante und zugleich einladende Atmosphäre."
   },
   {
     "id": 2,
     "name": "Kueche Beispiel 2",
     "img": ["assets/img/kitchen-images/Kueche2/kuecheninsel.jpg"],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 2"
+    "description": "Die Küche Nummer 2 überzeugt mit ihrer funktionalen Kücheninsel, die sowohl als Arbeitsfläche als auch als Treffpunkt dient. Hier treffen innovative Küchengeräte auf ein stilvolles Ambiente. Die klaren Linien und die durchdachte Raumaufteilung machen diese Küche zu einem echten Highlight für Hobbyköche und Genießer."
   },
   {
     "id": 3,
     "name": "Kueche Beispiel 3",
     "img": ["assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 3"
+    "description": "Küche Nummer 3 bietet eine perfekt integrierte Kücheninsel, die sowohl optisch als auch praktisch überzeugt. Mit viel Stauraum und einer großzügigen Arbeitsfläche ist diese Küche ideal für diejenigen, die gerne kochen und backen. Die harmonische Farbgebung und die hochwertige Ausstattung runden das Gesamtbild ab."
   },
   {
     "id": 4,
     "name": "Kueche Beispiel 4",
     "img": ["assets/img/kitchen-images/Kueche4/kuechentresen.jpg"],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 4"
+    "description": "Die Küche Nummer 4 besticht durch ihren eleganten Küchentresen, der sowohl als Arbeitsbereich als auch als Kommunikationszentrum dient. Die Kombination aus modernen Geräten und stilvollen Möbeln macht diese Küche zu einem Ort, an dem man sich gerne aufhält. Der großzügige Tresen lädt zum Verweilen ein und bietet gleichzeitig viel Platz für kreative Kochideen."
   },
   {
     "id": 5,
     "name": "Kueche Beispiel 5",
     "img": ["assets/img/kitchen-images/Kueche5/kuecheninstal.jpg"],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 5"
+    "description": "Küche Nummer 5 beeindruckt mit ihrer modernen und funktionalen Gestaltung. Die klaren Linien und die hochwertige Verarbeitung der Materialien sorgen für ein elegantes Ambiente. Die durchdachte Anordnung der Arbeitsbereiche und der großzügige Stauraum machen diese Küche zu einem perfekten Ort für kulinarische Experimente und gesellige Stunden."
   },
   {
     "id": 6,
@@ -39,7 +39,7 @@
       "assets/img/kitchen-images/Kueche6/kuehlschrank.jpg",
       "assets/img/kitchen-images/Kueche6/waschbecken.jpg"
     ],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 6"
+    "description": "Die Küche Nummer 6 vereint Funktionalität und Stil in perfekter Harmonie. Der große Kühlschrank und das geräumige Waschbecken sind ideal für die tägliche Nutzung und bieten viel Komfort. Die durchdachte Anordnung der Schränke und Geräte sorgt für eine effiziente Raumnutzung und eine angenehme Arbeitsatmosphäre."
   },
   {
     "id": 7,
@@ -50,13 +50,13 @@
       "assets/img/kitchen-images/Kueche7/kuechenschrank.jpg",
       "assets/img/kitchen-images/Kueche7/ofen.jpg"
     ],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 7"
+    "description": "Küche Nummer 7 ist ein wahres Paradies für Kochbegeisterte. Ausgestattet mit einem modernen Herd, einem leistungsstarken Ofen und großzügigen Schranklösungen, lässt diese Küche keine Wünsche offen. Die hochwertige Verarbeitung und die stilvolle Optik machen diese Küche zu einem echten Blickfang, der jeden Kochabend zu einem besonderen Erlebnis macht."
   },
   {
     "id": 8,
     "name": "Kueche Beispiel 8",
     "img": ["assets/img/kitchen-images/Kueche8/kuechenmarmor.jpg"],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 8"
+    "description": "Die Küche Nummer 8 strahlt Eleganz und Luxus aus. Der edle Marmorboden und die hochwertigen Arbeitsflächen verleihen dieser Küche einen exklusiven Charakter. Die harmonische Farbgestaltung und die durchdachte Anordnung der Möbel schaffen eine einladende Atmosphäre, in der man gerne Zeit verbringt und kulinarische Köstlichkeiten zaubert."
   },
   {
     "id": 9,
@@ -65,7 +65,7 @@
       "assets/img/kitchen-images/Kueche9/kuechenofen.jpg",
       "assets/img/kitchen-images/Kueche9/kuecheninsel.jpg"
     ],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 9"
+    "description": "Küche Nummer 9 überzeugt mit ihrer modernen Ausstattung und der großzügigen Kücheninsel, die als Herzstück dient. Der leistungsstarke Ofen und die großzügigen Arbeitsflächen bieten ideale Bedingungen für kreatives Kochen. Die stilvolle Gestaltung und die durchdachte Anordnung der Möbel machen diese Küche zu einem echten Highlight."
   },
   {
     "id": 10,
@@ -76,9 +76,8 @@
       "assets/img/kitchen-images/Kueche10/kuechenschrankled.jpg",
       "assets/img/kitchen-images/Kueche10/kuechenschranklednight.jpg",
       "assets/img/kitchen-images/Kueche10/kuechenschranklednightright.jpg",
-      "assets/img/kitchen-images/Kueche10/kuechenschrankoffenled.jpg",
-      "assets/img/kitchen-images/Kueche10/kuechenschrankoffen.jpg"
+      "assets/img/kitchen-images/Kueche10/kuechenschrankoffenled.jpg"
     ],
-    "description": "Hier befindet sich in Zukunft die Küchenbeschreibung für Küche Nummer 10"
+    "description": "Die Küche Nummer 10 beeindruckt mit einer innovativen LED-Beleuchtung, die für eine angenehme und moderne Atmosphäre sorgt. Die gut durchdachte Anordnung der Schränke und Arbeitsflächen bietet viel Platz und Stauraum. Diese Küche ist nicht nur funktional, sondern auch ein echter Hingucker, der durch sein stilvolles Design besticht."
   }
 ]

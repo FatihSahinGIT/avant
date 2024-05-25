@@ -23,8 +23,6 @@ function showDetail() {
   }
 
   let swiperWrapper = document.querySelector(".swiper-wrapper");
-
-  // Clear the Swiper container
   swiperWrapper.innerHTML = "";
 
   thisProduct.img.forEach((imgSrc) => {
@@ -36,10 +34,12 @@ function showDetail() {
     swiperWrapper.appendChild(swiperSlide);
   });
 
+  desc.innerHTML = ""; // Clear previous description
   let textElement = document.createElement("p");
   textElement.innerText = thisProduct.description;
   desc.appendChild(textElement);
 
+  header.innerHTML = ""; // Clear previous header
   let headerElement = document.createElement("h1");
   headerElement.innerText = thisProduct.name;
   header.appendChild(headerElement);
@@ -57,42 +57,41 @@ function showDetail() {
     };
   });
 
-  // Close modal on "x" click
   span.onclick = function () {
     modal.style.display = "none";
   };
 
-  // Close modal on outside click
   modal.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   };
 
-  // Similar Products
   let listProduct = document.querySelector(".kitchen-list-similar");
+  listProduct.innerHTML = ""; // Clear previous products
+
   products
-    .filter((value) => value.id !== productId)
+    .filter((value) => value.id !== parseInt(productId))
     .forEach((product) => {
       let newProduct = document.createElement("a");
       newProduct.href = "/detail.html?id=" + product.id;
       newProduct.classList.add("item");
       newProduct.innerHTML = `
-      <img src=${product.img[0]} />
-      <h2>${product.name}</h2>
+        <img src="${product.img[0]}" />
+        <h2>${product.name}</h2>
       `;
       listProduct.appendChild(newProduct);
     });
 
   // Initialize Swiper
-  new Swiper('.swiper-container', {
+  new Swiper(".swiper-container", {
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 }
