@@ -60,6 +60,11 @@
   .main {
     justify-content: center;
     gap: 1rem;
+    background-image: url("../img/stock-images/lp-image.jpg");
+    background-size: cover; /* Ensures the image fits within the container */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Changing fixed to scroll for mobile */
   }
 
   .main-text {

@@ -1,265 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body>
-    <div class="website-content" id="website-content">
-      <nav id="navbar">
-        <div class="info">
-          <h2><a id="nav-header" href="/avant/index.html">Avant Kitchen</a></h2>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="toggle-btn">
-          <button
-            class="burger"
-            onclick="this.classList.toggle('active');"
-          ></button>
-        </div>
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-        <div class="nav-items">
-          <div class="nav-item">
-            <li><a href="#about">Über uns</a></li>
-          </div>
-          <div class="nav-item">
-            <li><a href="/kitchen.html">Projekte</a></li>
-          </div>
-          <div class="nav-item">
-            <li><a href="/contact.html">Kontakt</a></li>
+<body>
+  <div class="website-content" id="website-content">
+    <nav id="navbar">
+      <div class="info">
+        <h2><a id="nav-header" href="/avant/index.html">Avant Kitchen</a></h2>
+      </div>
+
+      <div class="toggle-btn">
+        <button class="burger" onclick="this.classList.toggle('active');"></button>
+      </div>
+
+      <div class="nav-items">
+        <div class="nav-item">
+          <li><a href="#about">Über uns</a></li>
+        </div>
+        <div class="nav-item">
+          <li><a href="/kitchen.html">Projekte</a></li>
+        </div>
+        <div class="nav-item">
+          <li><a href="/contact.html">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay">
+      <div class="overlay-menu">
+        <div class="menu-item">
+          <div class="menu-item-name">
+            <p id="active"><a href="#about">Über Uns</a></p>
           </div>
         </div>
-      </nav>
-      <div class="overlay">
-        <div class="overlay-menu">
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p id="active"><a href="#about">Über Uns</a></p>
-            </div>
+        <div class="menu-item">
+          <div class="menu-item-name">
+            <p><a href="/avant/kitchen.html">Projekte</a></p>
           </div>
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p><a href="/avant/kitchen.html">Projekte</a></p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p><a href="/avant/contact.html">Kontakt</a></p>
-            </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-name">
+            <p><a href="/avant/contact.html">Kontakt</a></p>
           </div>
         </div>
       </div>
-
-      <div class="main">
-        <h1>Avant</h1>
-        <div class="main-text">
-          <p>
-            Herzlich willkommen bei Avant Kitchen – Ihrem Spezialisten für
-            individuell gestaltete Traumküchen nach Maß. Wir bieten Ihnen
-            exklusive Beratung, maßgeschneidertes Design und professionelle
-            Montage, um Ihre perfekte Küche zu verwirklichen.
-          </p>
-
-          <button id="main__btn">
-            <a href="/avant/contact.html">Kontaktieren Sie uns</a>
-          </button>
-        </div>
-      </div>
-
-      <div class="about" id="about">
-        <div class="about-content">
-          <div class="about-image-container">
-            <img src="./assets/img/stock-images/about-kitchen.jpg" />
-          </div>
-
-          <div class="about-text-container">
-            <div class="about-text-content">
-              <span class="about-text-wrapper">
-                <span>Über Uns</span>
-              </span>
-
-              <h2>Erlebe Küchenästhetik <span id="new">neu</span></h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laudantium possimus enim delectus accusantium commodi magnam
-                reiciendis minus eveniet eaque, architecto sequi nesciunt omnis
-                et beatae suscipit ipsum in nulla voluptates! <br />
-                <br />
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Placeat nam totam labore et rem. Eligendi.
-              </p>
-
-              <button>
-                <a href="/kitchen.html">Unser Angebot</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="service-card-content">
-          <div class="service-slider">
-            <div class="service-card">
-              <img src="./assets/img/stock-images/beratung.jpg" alt="" />
-              <div class="copy">
-                <h1 class="service-header">Beratung</h1>
-                <p id="service-card__text">
-                  Unsere Beratung im Küchenbau ist persönlich und professionell.
-                  Wir nehmen uns Zeit, um Ihre Wünsche zu verstehen und bieten
-                  maßgeschneiderte Lösungen für Ihre Küchengestaltung.
-                </p>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="./assets/img/stock-images/montage.jpg" alt="" />
-              <div class="copy">
-                <h1 class="service-header">Montage</h1>
-                <p id="service-card__text">
-                  Unser Montage-Service für Küchen garantiert eine reibungslose
-                  Installation nach Ihren Vorstellungen. Unsere erfahrenen
-                  Handwerker kümmern sich um jedes Detail, damit Ihre Küche
-                  perfekt funktioniert und aussieht.
-                </p>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="./assets/img/stock-images/design.jpg" alt="" />
-              <div class="copy">
-                <h1 class="service-header">Design</h1>
-                <p id="service-card__text">
-                  Unser Design-Service für Küchen vereint Ästhetik und
-                  Funktionalität auf höchstem Niveau. Von zeitlosen Klassikern
-                  bis hin zu modernen Trends setzen wir Ihre Visionen um und
-                  schaffen eine Küche, die sowohl ansprechend als auch praktisch
-                  ist.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects" id="projects">
-        <div class="project-text-content">
-          <h3 id="projects-header">Unsere Arbeit</h3>
-          <p>
-            Entdecken Sie die Vielfalt an Küchenprodukten von Avant Kitchen -
-            stilvoll und funktional zugleich. Von eleganten Möbeln über
-            innovative Geräte bis hin zu praktischem Zubehör bieten wir alles
-            für Ihre Traumküche. Unsere Produkte stehen für höchste Qualität und
-            erstklassiges Design. Tauchen Sie ein und lassen Sie sich
-            inspirieren!
-          </p>
-          <button id="projects-btn">
-            <a href="/avant/kitchen.html">Hier zur Gesamtübersicht</a>
-          </button>
-        </div>
-
-        <div class="slider">
-          <div class="slider-wrapper">
-            <div class="slider-item">
-              <figure>
-                <img
-                  src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg"
-                  alt="Kitchen Close Up Image"
-                />
-              </figure>
-            </div>
-
-            <div class="slider-item">
-              <figure>
-                <img
-                  src="./assets/img/kitchen-images/Kueche10/kuechenschranklednightright.jpg"
-                  alt="Kitchen Close Up Image"
-                />
-              </figure>
-            </div>
-
-            <div class="slider-item">
-              <figure>
-                <img
-                  src="./assets/img/kitchen-images/Kueche9/kuecheninsel.jpg"
-                  alt="Kitchen Close Up Image"
-                />
-              </figure>
-            </div>
-
-            <div class="slider-item">
-              <figure>
-                <img
-                  src="./assets/img/kitchen-images/Kueche10/kuecheled.jpg"
-                  alt="Kitchen Close Up Image"
-                />
-              </figure>
-            </div>
-
-            <div class="slider-item">
-              <figure>
-                <img
-                  src="./assets/img/kitchen-images/Kueche8/kuechenmarmor.jpg"
-                  alt="Kitchen Close Up Image"
-                />
-              </figure>
-            </div>
-
-            <div class="slider-item">
-              <figure>
-                <img
-                  src="./assets/img/kitchen-images/Kueche10/kuechenschrankled.jpg"
-                  alt="Kitchen Close Up Image"
-                />
-              </figure>
-            </div>
-          </div>
-          <div class="slider-progress">
-            <div class="slider-progress-bar"></div>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <div class="footer-logo">
-          <img
-            src="./assets/img/logo/Logo-transformed-transformed.png"
-            alt="Avant Kitchen Illustration"
-          />
-        </div>
-
-        <div class="footer-quicklinks">
-          <ul>
-            <h5>Quick Links</h5>
-            <li><a href="#about">Über Uns</a></li>
-            <li><a href="/kitchen.html">Projekte</a></li>
-            <li><a href="/contact.html">Kontakt</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <ul>
-            <h5>Adresse</h5>
-            <li><a>Testadresse 12, 12494 Berlin</a></li>
-
-            <li><a>Impressum</a></li>
-          </ul>
-        </div>
-      </footer>
     </div>
-  </body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <div class="main">
+      <h1>Avant</h1>
+      <div class="main-text">
+        <p>
+          Herzlich willkommen bei Avant Kitchen – Ihrem Spezialisten für
+          individuell gestaltete Traumküchen nach Maß. Wir bieten Ihnen
+          exklusive Beratung, maßgeschneidertes Design und professionelle
+          Montage, um Ihre perfekte Küche zu verwirklichen.
+        </p>
 
-  <script src="./assets/js/general/services.js"></script>
-  <script src="./assets/js/general/lenis.js"></script>
-  <script src="./assets/js/general/nav.js"></script>
-  <script src="./assets/js/pages/main.js"></script>
+        <button id="main__btn">
+          <a href="/avant/contact.html">Kontaktieren Sie uns</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="about-content">
+        <div class="about-text-container">
+          <div class="about-text-content">
+            <h2>Erleben Sie ein neues Küchenerlebnis</h2>
+            <p>
+              Avant Kitchen steht für Innovation und Qualität im Küchenbau.
+              Unser erfahrenes Team aus Designern und Handwerkern arbeitet eng
+              mit Ihnen zusammen, um Ihre individuellen Vorstellungen und
+              Wünsche zu verwirklichen. Von der ersten Idee bis zur finalen
+              Umsetzung begleiten wir Sie mit maßgeschneiderten Lösungen und
+              höchstem Engagement.
+              <br /><br />
+              Unsere Philosophie basiert auf dem Streben nach Perfektion und
+              der Leidenschaft für herausragendes Design. Dabei legen wir
+              großen Wert auf Nachhaltigkeit und verwenden ausschließlich
+              hochwertige Materialien. Mit Avant Kitchen schaffen Sie nicht
+              nur eine Küche, sondern einen Raum, der Ihre Persönlichkeit
+              widerspiegelt und zum Herzen Ihres Zuhauses wird.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-image-container">
+          <button class="center-button">
+            <a href="/kitchen.html">Entdecken Sie unsere tollen Küchen!</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="service-card-content">
+        <div class="service-slider">
+          <div class="service-card">
+            <img src="./assets/img/stock-images/beratung.jpg" alt="" />
+            <div class="copy">
+              <h1 class="service-header">Beratung</h1>
+              <p id="service-card__text">
+                Unsere Beratung im Küchenbau ist persönlich und professionell.
+                Wir nehmen uns Zeit, um Ihre Wünsche zu verstehen und bieten
+                maßgeschneiderte Lösungen für Ihre Küchengestaltung.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="./assets/img/stock-images/montage.jpg" alt="" />
+            <div class="copy">
+              <h1 class="service-header">Montage</h1>
+              <p id="service-card__text">
+                Unser Montage-Service für Küchen garantiert eine reibungslose
+                Installation nach Ihren Vorstellungen. Unsere erfahrenen
+                Handwerker kümmern sich um jedes Detail, damit Ihre Küche
+                perfekt funktioniert und aussieht.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="./assets/img/stock-images/design.jpg" alt="" />
+            <div class="copy">
+              <h1 class="service-header">Design</h1>
+              <p id="service-card__text">
+                Unser Design-Service für Küchen vereint Ästhetik und
+                Funktionalität auf höchstem Niveau. Von zeitlosen Klassikern
+                bis hin zu modernen Trends setzen wir Ihre Visionen um und
+                schaffen eine Küche, die sowohl ansprechend als auch praktisch
+                ist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <div class="project-text-content">
+        <h3 id="projects-header">Unsere Arbeit</h3>
+        <p>
+          Entdecken Sie die Vielfalt an Küchenprodukten von Avant Kitchen -
+          stilvoll und funktional zugleich. Von eleganten Möbeln über
+          innovative Geräte bis hin zu praktischem Zubehör bieten wir alles
+          für Ihre Traumküche. Unsere Produkte stehen für höchste Qualität und
+          erstklassiges Design. Tauchen Sie ein und lassen Sie sich
+          inspirieren!
+        </p>
+        <button id="projects-btn">
+          <a href="/avant/kitchen.html">Hier zur Gesamtübersicht</a>
+        </button>
+      </div>
+
+      <div class="slider">
+        <div class="slider-wrapper">
+          <div class="slider-item">
+            <figure>
+              <img src="./assets/img/kitchen-images/Kueche3/kuecheninsel.jpg" alt="Kitchen Close Up Image" />
+            </figure>
+          </div>
+
+          <div class="slider-item">
+            <figure>
+              <img src="./assets/img/kitchen-images/Kueche10/kuechenschranklednightright.jpg"
+                alt="Kitchen Close Up Image" />
+            </figure>
+          </div>
+
+          <div class="slider-item">
+            <figure>
+              <img src="./assets/img/kitchen-images/Kueche9/kuecheninsel.jpg" alt="Kitchen Close Up Image" />
+            </figure>
+          </div>
+
+          <div class="slider-item">
+            <figure>
+              <img src="./assets/img/kitchen-images/Kueche10/kuecheled.jpg" alt="Kitchen Close Up Image" />
+            </figure>
+          </div>
+
+          <div class="slider-item">
+            <figure>
+              <img src="./assets/img/kitchen-images/Kueche8/kuechenmarmor.jpg" alt="Kitchen Close Up Image" />
+            </figure>
+          </div>
+
+          <div class="slider-item">
+            <figure>
+              <img src="./assets/img/kitchen-images/Kueche10/kuechenschrankled.jpg" alt="Kitchen Close Up Image" />
+            </figure>
+          </div>
+        </div>
+        <div class="slider-progress">
+          <div class="slider-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="./assets/img/logo/Logo-transformed-transformed.png" alt="Avant Kitchen Illustration" />
+      </div>
+
+      <div class="footer-quicklinks">
+        <ul>
+          <h5>Quick Links</h5>
+          <li><a href="#about">Über Uns</a></li>
+          <li><a href="/kitchen.html">Projekte</a></li>
+          <li><a href="/contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <ul>
+          <h5>Adresse</h5>
+          <li><a>Testadresse 12, 12494 Berlin</a></li>
+
+          <li><a>Impressum</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+<script src="./assets/js/general/services.js"></script>
+<script src="./assets/js/general/lenis.js"></script>
+<script src="./assets/js/general/nav.js"></script>
+<script src="./assets/js/pages/main.js"></script>
+
 </html>

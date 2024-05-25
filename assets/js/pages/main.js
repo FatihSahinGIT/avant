@@ -26,24 +26,29 @@ gsap.from(mainbtn, {
   ease: "power3.out",
 });
 
-gsap.from(".about-image-container img", {
-  x: "-100%",
+// Smoothere Animation für .about-text-container
+gsap.from(".about-text-container", {
+  x: "20%",
   opacity: 0,
   ease: "power4.out",
   scrollTrigger: {
     trigger: ".about",
     start: "top 70%",
-    end: "bottom 60%",
+    end: "bottom 50%",
+    scrub: true,
   },
 });
 
-gsap.from(".about-text-container", {
-  x: "100%",
+// Stagger Animation für die .about-text-content h2 und p Elemente
+gsap.from(".about-text-content > *", {
+  duration: 1.5,
+  y: 10,
   opacity: 0,
-  ease: "power4.out",
+  ease: "power2.out",
+  stagger: 0.3, // Zeitverzögerung zwischen den Animationen
   scrollTrigger: {
-    trigger: ".about",
-    start: "top 70%",
+    trigger: ".about-text-content",
+    start: "top 80%",
     end: "bottom 50%",
     scrub: true,
   },
