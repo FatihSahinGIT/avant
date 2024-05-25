@@ -63,3 +63,58 @@
   cursor: pointer;
   text-align: center;
 }
+
+.center-button h4 {
+  font-size: 2rem;
+}
+
+.center-button a {
+  color: var(--accent-color);
+  background: var(--text-color);
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+  /* Ensure link is treated as block element */
+}
+
+.center-button a:hover {
+  transform: translateY(-4px);
+  /* Corrected the transformation */
+}
+
+.center-button>* {
+  padding: 0.5rem 0;
+}
+
+.center-button h4 {
+  font-family: Subfont;
+}
+
+.center-button a {
+  font-family: Switzer-Bold;
+}
+
+/* ============= MEDIA QUERIES ============= */
+
+/* === MOBILE SCREEN === */
+@media (max-width: 768px) {
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-text-container {
+    width: 95%;
+  }
+
+  .about-text-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-text-container p {
+    font-size: 0.85rem;
+  }
+
+  .center-button h4 {
+    font-size: 1.25rem;
+  }
+}
