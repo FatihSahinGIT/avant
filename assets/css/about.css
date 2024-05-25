@@ -96,7 +96,7 @@
 /* ============= MEDIA QUERIES ============= */
 
 /* === MOBILE SCREEN === */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about {
     margin-left: auto;
     margin-right: auto;
