@@ -31,7 +31,7 @@
   text-align: left;
   color: var(--secondary-accent-color);
   width: 75%;
-  font-family: Switzer-Regular;
+  font-family: Switzer-Light;
 }
 
 #main__btn a {
@@ -60,22 +60,20 @@
   .main {
     justify-content: center;
     gap: 1rem;
-    background-image: url("../img/stock-images/lp-image.jpg");
-    background-size: cover; /* Ensures the image fits within the container */
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll; /* Changing fixed to scroll for mobile */
+    background-attachment: scroll;
   }
 
   .main-text {
     flex-direction: column-reverse;
-    gap: 15rem;
+    gap: 12rem;
   }
 
   .main p {
     color: var(--text-color);
     text-align: left;
-    font-size: 1.05rem;
+    font-size: 1rem;
     width: 90%;
   }
 

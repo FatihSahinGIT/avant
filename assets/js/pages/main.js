@@ -61,8 +61,7 @@ function createSlider() {
   const scroll = new DragScroll({
     el: ".slider",
     wrap: ".slider-wrapper",
-    item: ".slider-item",
-    bar: ".slider-progress-bar",
+    item: ".slider-item"
   });
 
   const animateScroll = () => {
@@ -90,7 +89,6 @@ ScrollTrigger.create({
         this.el = document.querySelector(obj.el);
         this.wrap = this.el.querySelector(obj.wrap);
         this.items = this.el.querySelectorAll(obj.item);
-        this.bar = this.el.querySelector(obj.bar);
         this.init();
       }
 
@@ -178,7 +176,6 @@ ScrollTrigger.create({
         this.playrate = this.x / this.maxScroll;
 
         this.wrap.style.transform = `translateX(${-this.x}px)`;
-        this.bar.style.transform = `scaleX(${0.18 + this.playrate * 0.82})`;
 
         this.speed = Math.min(100, this.oldX - this.x);
         this.oldX = this.x;
@@ -196,8 +193,7 @@ ScrollTrigger.create({
     const scroll = new DragScroll({
       el: ".slider",
       wrap: ".slider-wrapper",
-      item: ".slider-item",
-      bar: ".slider-progress-bar",
+      item: ".slider-item"
     });
 
     const animateScroll = () => {

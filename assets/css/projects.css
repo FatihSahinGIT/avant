@@ -21,7 +21,7 @@
 }
 
 .project-text-content p {
-  font-family: Switzer-Regular;
+  font-family: Switzer-Light;
   font-size: 1.25rem;
 }
 
@@ -97,4 +97,26 @@
   background: rgba(255, 255, 255, 0.8);
   transform: scaleX(0);
   transform-origin: 0% 0%;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    width: 95%;
+  }
+
+  #projects-header {
+    font-size: 2rem;
+  }
+
+  .project-text-content p {
+    font-size: 1rem;
+  }
+
+  #projects-btn a {
+    font-size: 0.65rem;
+  }
+
+  .slider-item {
+    width: 500px;
+  }
 }
