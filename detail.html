@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
-
 <body>
   <div class="website-content">
     <nav id="navbar">
@@ -54,50 +52,51 @@
     </div>
 
     <div class="container">
-
       <div class="detail">
-        <div class="detail-text-container">
-          <div class="detail-text-content">
-            <h1 class="title"></h1>
-            <div class="detail-description">
-              <h4 id="detail-description__header">Beschreibung</h4>
-              <p class="desc"></p>
-            </div>
+        <div class="detail-content">
+          <div class="detail-text-container">
+            <div class="detail-text-content">
+              <h1 class="title"></h1>
+              <div class="detail-description">
+                <h4 id="detail-description__header">Beschreibung</h4>
+                <p class="desc"></p>
+              </div>
 
-            <div class="detail-description">
-              <h4 id="detail-description__header">Maße</h4>
-              <p class="detail-spec">Hier folgen mögliche Küchenmaße</p>
-            </div>
+              <div class="detail-description">
+                <h4 id="detail-description__header">Maße</h4>
+                <p class="detail-spec">Hier folgen mögliche Küchenmaße</p>
+              </div>
 
-            <div class="buttons">
-              <button id="buttons_contact">
-                <a href="/contact.html">Anfrage</a>
-              </button>
-              <button id="buttons_back">
-                <a href="/kitchen.html">Zurück</a>
-              </button>
+              <div class="buttons">
+                <button id="buttons_contact">
+                  <a href="/contact.html">Anfrage</a>
+                </button>
+                <button id="buttons_back">
+                  <a href="/kitchen.html">Zurück</a>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Swiper -->
-        <div class="swiper">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <!-- Slides will be inserted here -->
+          <!-- Swiper -->
+          <div class="swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slides will be inserted here -->
+              </div>
+
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- Add Navigation -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
 
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-
-          <div id="image-modal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modal-image" />
+            <div id="image-modal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="modal-image">
+            </div>
           </div>
         </div>
       </div>
@@ -106,13 +105,12 @@
         <div class="similar-title">Weitere Küchen</div>
         <div class="kitchen-list-similar"></div>
       </div>
-      
     </div>
   </div>
 
   <footer>
     <div class="footer-logo">
-      <img src="./assets/img/logo/Logo-transformed-transformed.png" alt="Avant Kitchen Illustration" />
+      <img src="./assets/img/logo/Logo-transformed-transformed.png" alt="Avant Kitchen Illustration">
     </div>
 
     <div class="footer-quicklinks">
@@ -145,5 +143,4 @@
   <script src="./assets/js/general/nav.js"></script>
   <script src="./assets/js/pages/detail.js"></script>
 </body>
-
 </html>
