@@ -27,6 +27,18 @@ footer {
   gap: 2px;
 }
 
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo li {
+  width: max-content
+}
+
+.footer-logo li,
 .footer-quicklinks ul li,
 .footer-contact ul li {
   list-style: none;
@@ -39,6 +51,7 @@ footer {
   margin-bottom: 0.75rem;
 }
 
+.footer-logo li a,
 .footer-quicklinks ul li a,
 .footer-contact ul li a {
   text-decoration: none;
