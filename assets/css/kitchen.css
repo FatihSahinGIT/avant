@@ -331,7 +331,7 @@
   }
 
   .swiper-slide img {
-    height: 500px !important;
+    max-height: 250px;
   }
 
   #buttons_contact a,
@@ -342,6 +342,17 @@
 
   .kitchen-list-similar {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .similar-title {
+    line-height: 100%;
+    font-size: 2.5rem;
+    padding: 0.25rem;
+  }
+
+  .kitchen-list-similar .item {
+    padding: 4px;
   }
 
   .kitchen-list-similar a {
