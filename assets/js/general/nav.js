@@ -18,11 +18,14 @@ const headerLink = document.getElementById("nav-header");
 headerLink.addEventListener("click", function (event) {
   event.preventDefault();
 
+  closeNavigation();
+
   gsap.to(window, {
     duration: 1.5,
+    scrollTo: 0,
     ease: "power4.inOut",
     onComplete: function () {
-      window.scrollTo(0, 0);
+      window.location.href = "/index.html";
     },
   });
 });

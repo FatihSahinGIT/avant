@@ -1,119 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avant Kitchen</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avant Kitchen</title>
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-
-<body>
-  <div class="website-content">
-    <div class="website-content" id="website-content">
-      <nav id="navbar">
-        <div class="info">
-          <h2>
-            <a id="nav-header" href="/">Avant Kitchen</a>
-          </h2>
-        </div>
-
-        <div class="toggle-btn">
-          <button class="burger" onclick="this.classList.toggle('active');"></button>
-        </div>
-
-        <div class="nav-items">
-          <div class="nav-item">
-            <li><a href="/index.html#about">Über uns</a></li>
+  <body>
+    <div class="website-content">
+      <div class="website-content" id="website-content">
+        <nav id="navbar">
+          <div class="info">
+            <h2>
+              <a id="nav-header">Avant Kitchen</a>
+            </h2>
           </div>
-          <div class="nav-item">
-            <li><a href="/kitchen.html">Projekte</a></li>
+
+          <div class="toggle-btn">
+            <button
+              class="burger"
+              onclick="this.classList.toggle('active');"
+            ></button>
           </div>
-          <div class="nav-item">
-            <li><a href="/contact.html">Kontakt</a></li>
-          </div>
-        </div>
-      </nav>
-      <div class="overlay">
-        <div class="overlay-menu">
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p id="active"><a href="#about">Über Uns</a></p>
+
+          <div class="nav-items">
+            <div class="nav-item">
+              <li><a href="/index.html#about">Über uns</a></li>
+            </div>
+            <div class="nav-item">
+              <li><a href="/kitchen.html">Projekte</a></li>
+            </div>
+            <div class="nav-item">
+              <li><a href="/contact.html">Kontakt</a></li>
             </div>
           </div>
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p><a href="/avant/kitchen.html">Projekte</a></p>
+        </nav>
+        <div class="overlay">
+          <div class="overlay-menu">
+            <div class="menu-item">
+              <div class="menu-item-name">
+                <p id="active"><a href="/index.html/#about">Über Uns</a></p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-name">
+                <p><a href="/kitchen.html">Projekte</a></p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-name">
+                <p><a href="/contact.html">Kontakt</a></p>
+              </div>
             </div>
           </div>
-          <div class="menu-item">
-            <div class="menu-item-name">
-              <p><a href="/avant/contact.html">Kontakt</a></p>
+        </div>
+
+        <div class="kitchen">
+          <div class="kitchen-content">
+            <div class="kitchen-title-container">
+              <h1 id="kitchen-title">Unsere Küchen</h1>
+              <p id="kitchen-text">
+                Wir sind stolz darauf, maßgeschneiderte Küchendesigns zu
+                kreieren, die sowohl funktional als auch ästhetisch ansprechend
+                sind. Unsere Küchenprojekte zeichnen sich durch hochwertige
+                Materialien, innovative Technik und individuelle
+                Gestaltungsmöglichkeiten aus. Ob Sie eine moderne,
+                minimalistische Küche oder eine gemütliche, traditionelle
+                Kochlandschaft bevorzugen, unser erfahrenes Team arbeitet eng
+                mit Ihnen zusammen, um Ihre Traumküche zu verwirklichen.
+                Entdecken Sie unsere vielfältigen Projekte und lassen Sie sich
+                inspirieren.
+              </p>
             </div>
+
+            <div class="kitchen-list"></div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="kitchen">
-        <div class="kitchen-content">
-          <div class="kitchen-title-container">
-            <h1 id="kitchen-title">Unsere Küchen</h1>
-            <p id="kitchen-text">
-              Wir sind stolz darauf, maßgeschneiderte Küchendesigns zu
-              kreieren, die sowohl funktional als auch ästhetisch ansprechend
-              sind. Unsere Küchenprojekte zeichnen sich durch hochwertige
-              Materialien, innovative Technik und individuelle
-              Gestaltungsmöglichkeiten aus. Ob Sie eine moderne,
-              minimalistische Küche oder eine gemütliche, traditionelle
-              Kochlandschaft bevorzugen, unser erfahrenes Team arbeitet eng
-              mit Ihnen zusammen, um Ihre Traumküche zu verwirklichen.
-              Entdecken Sie unsere vielfältigen Projekte und lassen Sie sich
-              inspirieren.
-            </p>
-          </div>
-
-          <div class="kitchen-list"></div>
-        </div>
+    <footer>
+      <div class="footer-logo">
+        <img
+          src="./assets/img/logo/Logo-transformed-transformed.png"
+          alt="Avant Kitchen Illustration"
+        />
       </div>
-    </div>
-  </div>
 
-  <footer>
-    <div class="footer-logo">
-      <img src="./assets/img/logo/Logo-transformed-transformed.png" alt="Avant Kitchen Illustration" />
-    </div>
+      <div class="footer-quicklinks">
+        <ul>
+          <h5>Quick Links</h5>
+          <li><a href="/index.html/#about">Über Uns</a></li>
+          <li><a href="/kitchen.html">Projekte</a></li>
+          <li><a href="/contact.html">Kontakt</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-quicklinks">
-      <ul>
-        <h5>Quick Links</h5>
-        <li><a href="#about">Über Uns</a></li>
-        <li><a href="/kitchen.html">Projekte</a></li>
-        <li><a href="/contact.html">Kontakt</a></li>
-      </ul>
-    </div>
+      <div class="footer-contact">
+        <ul>
+          <h5>Rechtliches</h5>
 
-    <div class="footer-contact">
-      <ul>
-        <h5>Rechtliches</h5>
+          <li><a href="/impressum.html">Impressum</a></li>
+          <li><a>Privacy</a></li>
+          <li><a>Cookies</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 
-        <li><a href="/impressum.html">Impressum</a></li>
-        <li><a>Privacy</a></li>
-        <li><a>Cookies</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="./assets/js/general/lenis.js"></script>
+  <script src="./assets/js/general/nav.js"></script>
 
-<script src="./assets/js/general/lenis.js"></script>
-<script src="./assets/js/general/nav.js"></script>
-
-<script src="./assets/js/pages/kitchen.js"></script>
-
+  <script src="./assets/js/pages/kitchen.js"></script>
 </html>
