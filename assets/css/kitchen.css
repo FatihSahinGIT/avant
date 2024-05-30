@@ -486,9 +486,6 @@
   background: var(--text-color) !important;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {}
-
 /* Anpassungen für Tablets und kleinere Bildschirme */
 @media screen and (max-width: 768px) {
   .modal-content {
