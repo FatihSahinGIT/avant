@@ -345,8 +345,13 @@
   }
 
   .kitchen-list-similar {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 0;
+  }
+
+  .kitchen-list-similar img {
+    width: 95%;
+    margin: 0 auto;
   }
 
   .similar-title {
@@ -481,10 +486,8 @@
   background: var(--text-color) !important;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {}
 
 /* Anpassungen für Tablets und kleinere Bildschirme */
 @media screen and (max-width: 768px) {

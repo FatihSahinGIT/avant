@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avant Kitchen</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -11,6 +11,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
+
   <body>
     <div class="website-content">
       <nav id="navbar">
@@ -56,60 +57,50 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container">
-        <div class="detail">
-          <div class="detail-content">
-            <div class="detail-text-container">
-              <div class="detail-text-content">
-                <h1 class="title"></h1>
-                <div class="detail-description">
-                  <h4 id="detail-description__header">Beschreibung</h4>
-                  <p class="desc"></p>
-                </div>
+    <div class="impressum">
+      <div class="impressum-content">
+        <h1>Impressum</h1>
 
-                <div class="detail-description">
-                  <h4 id="detail-description__header">Maße</h4>
-                  <p class="detail-spec">Hier folgen mögliche Küchenmaße</p>
-                </div>
-
-                <div class="buttons">
-                  <button id="buttons_contact">
-                    <a href="/contact.html">Anfrage</a>
-                  </button>
-                  <button id="buttons_back">
-                    <a href="/kitchen.html">Zurück</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Swiper -->
-            <div class="swiper">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <!-- Slides will be inserted here -->
-                </div>
-
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-
-              <div id="image-modal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="modal-image" />
-              </div>
-            </div>
-          </div>
+        <div class="impressum-name">
+          <p>
+            Max Mustermann<br />
+            Musterladen e.K.<br />
+            Inhaber: Max Mustermann<br />
+            Musterstra&szlig;e 111<br />
+            Geb&auml;ude 44<br />
+            90210 Musterstadt
+          </p>
         </div>
 
-        <div class="kitchen-similar-container">
-          <div class="similar-title">Weitere Küchen</div>
-          <div class="kitchen-list-similar"></div>
+        <div class="impressum-contact">
+          <h2>Kontakt</h2>
+          <p>
+            Telefon: +49 (0) 123 44 55 66<br />
+            Telefax: +49 (0) 123 44 55 99<br />
+            E-Mail: mustermann@musterfirma.de
+          </p>
+        </div>
+
+        <div class="impressum-umsatz">
+          <h2>Umsatzsteuer-ID</h2>
+          <p>
+            Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a
+            Umsatzsteuergesetz:<br />
+            DE999999999
+          </p>
+        </div>
+
+        <div class="impressum-verbraucher">
+          <h2>
+            Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
+          </h2>
+          <p>
+            Wir sind nicht bereit oder verpflichtet, an
+            Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+            teilzunehmen.
+          </p>
         </div>
       </div>
     </div>
@@ -151,6 +142,5 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/general/lenis.js"></script>
     <script src="./assets/js/general/nav.js"></script>
-    <script src="./assets/js/pages/detail.js"></script>
   </body>
 </html>
