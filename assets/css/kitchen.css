@@ -303,21 +303,49 @@
 
 @media screen and (max-width: 768px) {
   .detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .detail-text-content {
+    gap: 1.75rem;
+  }
+
+  .detail-content {
+    padding: 1rem 0rem;
     flex-direction: column;
   }
 
+  .detail-text-container {
+    width: 100%;
+  }
+
   .detail-text-container h1 {
-    line-height: 0;
-    font-size: 2rem;
+    line-height: 100%;
+    font-size: 2.5rem;
   }
 
   .detail-text-container p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left;
+  }
+
+  .swiper-slide img {
+    height: 500px !important;
+  }
+
+  #buttons_contact a,
+  #buttons_back a {
+    font-size: 0.75rem;
+    padding: 0.5rem;
   }
 
   .kitchen-list-similar {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kitchen-list-similar a {
+    height: 100%;
   }
 }
 
