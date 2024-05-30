@@ -340,6 +340,10 @@
     padding: 0.5rem;
   }
 
+  .kitchen-similar-container {
+    margin-top: 15rem;
+  }
+
   .kitchen-list-similar {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
@@ -357,6 +361,17 @@
 
   .kitchen-list-similar a {
     height: 100%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .detail {
+    margin: 0;
+    height: auto;
+  }
+
+  .swiper-slide img {
+    height: 950px !important;
   }
 }
 
@@ -466,8 +481,10 @@
   background: var(--text-color) !important;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+}
 
 /* Anpassungen für Tablets und kleinere Bildschirme */
 @media screen and (max-width: 768px) {
