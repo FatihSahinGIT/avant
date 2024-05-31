@@ -16,7 +16,7 @@ let kitchenlist = document.querySelector(".kitchen-list");
 function addDataToHTML() {
   products.forEach((product) => {
     let newProduct = document.createElement("a");
-    newProduct.href = "./detail.html?id=" + product.id; // Relativer Pfad angepasst
+    newProduct.href = "detail.html?id=" + product.id; // Relativer Pfad angepasst
     newProduct.classList.add("item");
 
     // Nur das erste Bild aus dem img Array wird verwendet

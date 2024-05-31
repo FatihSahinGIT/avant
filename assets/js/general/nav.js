@@ -25,7 +25,7 @@ headerLink.addEventListener("click", function (event) {
     scrollTo: 0,
     ease: "power4.inOut",
     onComplete: function () {
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
     },
   });
 });
