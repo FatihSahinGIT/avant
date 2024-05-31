@@ -74,7 +74,7 @@ function showDetail() {
     .filter((value) => value.id !== parseInt(productId))
     .forEach((product) => {
       let newProduct = document.createElement("a");
-      newProduct.href = "/detail.html?id=" + product.id;
+      newProduct.href = "detail.html?id=" + product.id;
       newProduct.classList.add("item");
       newProduct.innerHTML = `
         <img src="${product.img[0]}" />
